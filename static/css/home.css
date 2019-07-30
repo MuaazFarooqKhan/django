@@ -1,0 +1,26 @@
+html,body{
+background-color: #faffd1;
+background-size: cover;
+background-repeat: no-repeat;
+height: auto;
+font-family: 'Numans', sans-serif;
+}
+.Contact{
+background-image: linear-gradient(#a1ffce, #faffd1);}
+.services{
+background-image: linear-gradient(#a1ffce, #faffd1);}
+.id{
+   margin-left: 650px;
+}
+
+.button
+{
+    width: 8%;
+    height: 40px;
+    margin:  2px;
+    padding: 4px;
+    float: left;
+}
+.text-spacing-sm {
+    letter-spacing: 0.02em;
+}

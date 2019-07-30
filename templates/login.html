@@ -1,0 +1,99 @@
+{% load static from staticfiles  %}
+{% load bootstrap3 %}
+{% load fontawesome %}
+<!DOCTYPE html>
+<html lang="en">
+<head class="image">
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <!-- Bootstrap core CSS     -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <!--apni css-->
+
+    <link href="{% static 'css/login.css' %}" rel="stylesheet" />
+
+
+    <!-- Animation library for notifications   -->
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="{% static 'css/demo.css' %}" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+{#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
+{#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
+    <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
+
+        {% fontawesome_5_static %}
+
+</head>
+<body>
+<div class="container">
+    {% if messages %}
+        {% for message in messages %}
+{#                        {% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}#}
+            <div class="alert alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}" role="alert">
+            {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<span><i class="fab fa-facebook-square"></i></span>
+					<span><i class="fab fa-google-plus-square"></i></span>
+					<span><i class="fab fa-twitter-square"></i></span>
+				</div>
+			</div>
+				<div class="card-body form-bg">
+				<form action="/authentication">
+                    {%  csrf_token %}
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" name='email' placeholder="email">
+
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" name='password' placeholder="password">
+					</div>
+					<div class="row align-items-center remember">
+						<input type="checkbox">Remember Me
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Login" class="btn float-right login_btn">
+					</div>
+				</form>
+		</div>
+
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Don't have an account?<a href="/registrationforuser/" style="margin-left: 10%">Sign Up</a>
+				</div>
+				<div class="d-flex justify-content-center links">
+					Register company? <a href="/companyregister/" style="margin-left: 10%">Reg Here.</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

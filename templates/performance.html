@@ -1,0 +1,135 @@
+{% extends 'adminheader.html' %}
+{% load static from staticfiles  %}
+{% load bootstrap3 %}
+{% load fontawesome %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <!-- Bootstrap core CSS     -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <!--apni css-->
+
+    <link href="{% static 'css/dashboard.css' %}" rel="stylesheet" />
+
+
+    <!-- Animation library for notifications   -->
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="{% static 'css/demo.css' %}" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+{#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
+{#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
+    <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
+
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+          {% fontawesome_5_static %}
+</head>
+<body>
+{% block body %}
+<div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="margin-top: 8%; margin-left: 5%">
+
+                        <div class="header">
+                            <h4 class="title">Email Statistics</h4>
+                            <p class="category">Last Campaign Performance</p>
+                            <!-- <i class="fab fa-youtube text-danger" style="font-size: 20px" ></i>
+                            thk ho gya isa krna h
+                            haan jani ab inshallah aj raat bhaith ky es ko pura krn ga...
+                            okkk
+                            ok jani ty -->
+                        </div>
+                        <div class="content">
+                            <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+
+                            <div class="footer">
+                                <div class="legend">
+                                    <i class="fas fa-circle"></i> Open
+                                    <i class="fas fa-circle text-danger"></i> Bounce
+                                    <i class="fas fa-circle text-warning"></i> Unsubscribe
+                                </div>
+                                <hr>
+                                <div class="stats">
+                                    <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card"  style="margin-top: 4%; margin-left: 10%">
+                        <div class="header">
+                            <h4 class="title">Users Behavior</h4>
+                            <p class="category">24 Hours performance</p>
+                        </div>
+                        <div class="content">
+                            <div id="chartHours" class="ct-chart"></div>
+                            <div class="footer">
+                                <div class="legend">
+                                    <i class="fa fa-circle text-info"></i> Open
+                                    <i class="fa fa-circle text-danger"></i> Click
+                                    <i class="fa fa-circle text-warning"></i> Click Second Time
+                                </div>
+                                <hr>
+                                <div class="stats">
+                                    <i class="fa fa-history"></i> Updated 3 minutes ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-10" style="margin-left: 8%">
+                    <div class="card ">
+                        <div class="header">
+                            <h4 class="title">2014 Sales</h4>
+                            <p class="category">All products including Taxes</p>
+                        </div>
+                        <div class="content">
+                            <div id="chartActivity" class="ct-chart"></div>
+
+                            <div class="footer">
+                                <div class="legend">
+                                    <i class="fa fa-circle text-info"></i> Tesla Model S
+                                    <i class="fa fa-circle text-danger"></i> BMW 5 Series
+                                </div>
+                                <hr>
+                                <div class="stats">
+                                    <i class="fa fa-check"></i> Data information certified
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+{% endblock %}
+</body>
+</html>

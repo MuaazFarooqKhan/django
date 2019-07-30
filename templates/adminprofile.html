@@ -1,0 +1,270 @@
+{% extends 'adminheader.html' %}
+{% load static from staticfiles  %}
+{% load bootstrap3 %}
+{% load fontawesome %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <!-- Bootstrap core CSS     -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <!--apni css-->
+
+    <link href="{% static 'css/adminprofile.css' %}" rel="stylesheet" />
+
+
+    <!-- Animation library for notifications   -->
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="{% static 'css/demo.css' %}" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+{#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
+{#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
+    <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
+
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+{% block body %}
+{##}
+{#<marquee style="margin-left: 22%; background-color: #3fada8" align="{mid}" direction="left" scrollamount="10" behavior="altenate" scrolldelay="50" loop="" bgcolor="white" width="74%" height="50px" onmouseover="this.stop()" onmouseout="this.start()" class="firstmarquee">#}
+{#                    <p class="navtext">#}
+{#                        You are the admin of the company. You have the authority of each of every thing like add new bt, new station or can add new busses.#}
+{#                    </p>#}
+{#                </marquee>#}
+<div class="row">
+    <div class="wrapper">
+        <div class="sidebar" data-color="purple" data-image="assets/images/sidebar-5.jpg">
+        <img class="sidebar" height="500px" src="{% static 'images/sidebar-5.jpg' %}" alt="First slide">
+        <!-- <fa name="cog" animation="spin"></fa> -->
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	    <div class="sidebar-wrapper">
+                <div class="logo">
+                     <h2>
+                         <a href="/adminprofile/">
+                              Admin Panel
+                         </a>
+                     </h2>
+                </div>
+            <ul class="nav">
+                <li class="active">
+                    <h3 style="margin-left: 20%">
+                <a href="/performance/" >
+                    Statistics
+                </a></h3>
+                </li>
+            </ul>
+            <ul class="nav">
+                    <li class="active" style="padding-left: 10%">
+                        <h3 >
+                            <a href="/createbt/" >
+                                Create Bt
+                            </a>
+                        </h3>
+                    </li>
+            </ul>
+                <ul class="nav">
+                    <li class="active" style="padding-left: 10%">
+                        <h3 >
+                            <a href="/deletebt/" >
+                                Delete Bt
+                            </a>
+                        </h3>
+                    </li>
+            </ul>
+             <ul class="nav">
+                 <li class="active" style="padding-left: 10%">
+                     <h3 >
+                         <a href="/addthings/" >
+                             Add Things
+                         </a>
+                     </h3>
+                 </li>
+             </ul>
+              <ul class="nav">
+                 <li class="active" style="padding-left: 10%">
+                     <h3 >
+                         <a href="/adminsearch/" >
+                             Search
+                         </a>
+                     </h3>
+                 </li>
+                </ul>
+
+    	    </div>
+        </div>
+    </div>
+            <div class="col-md-5" style="margin-left: 38%; margin-top: 3%">
+                <div class="card card-user">
+                    <div class="image">
+                        <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..." />
+                    </div>
+                    <div class="content">
+                        <div class="author">
+                            <a href="#">
+                                <img class="avatar border-gray" src="{% static 'images/face-3.jpg' %}" alt="..." />
+
+                                <h4 class="title">Mike Andrew<br />
+                             <small>michael24</small>
+                          </h4>
+                            </a>
+                        </div>
+                        <p class="description text-center"> "Lamborghini Mercy
+                            <br> Your chick she so thirsty
+                            <br> I'm in that two seat Lambo"
+                        </p>
+                    </div>
+                </div>
+            </div>
+</div>
+<div class="content">
+            <div class="container-fluid">
+    <div class="row">
+            <div class="col-md-8"  style="margin-top: 2%; margin-left: 25%">
+                    <div class="card">
+                        <div class="header">
+                            <h4 class="title">Edit Profile</h4>
+                        </div>
+                        <div class="content">
+                                <form>
+                                <!-- <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label>Company (disabled)</label>
+                                            <input type="text" formControlName='cname' placeholder="Company">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Username</label>
+                                            <input type="text" formControlName='uname' placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" formControlName='email' placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>First Name</label>
+                                            <input type="text" formControlName='fname' placeholder="Company">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Last Name</label>
+                                            <input type="text" formControlName='lname' placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <input type="text" formControlName='address' placeholder="Home Address">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>City</label>
+                                            <input type="text" formControlName='city' placeholder="City">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Country</label>
+                                            <input type="text" formControlName='country' placeholder="Country">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Postal Code</label>
+                                            <input type="number" formControlName='pst' placeholder="ZIP Code">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>About Me</label>
+                                            <textarea rows="5" formControlName='me' placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                <div class="clearfix"></div> -->
+
+                                <div class="form-group">
+                                        <input class="fname rounded border" style="width:30%" formControlName='Username' placeholder="UserName" type="text">
+                                    </div>
+                                <div class="form-group">
+                                        <input class="fname rounded border" style="width:30%" formControlName='firstname' placeholder="Your First Name" type="text">
+                                         <!--agr koi cheaz lazmi required ho or msg py btana ho ky esy fill kro-->
+                                         <!--ISSUE-->
+                                         <!-- <span *ngIf="!signupForm.get('fname').valid">First Name is Required</span> -->
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="fname rounded border" style="width:30%" formControlName='lastname' placeholder="Your Last Name" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                            <input class="fname rounded border" style="width:100%" formControlName='Email' placeholder="Your Email ID" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="fname rounded border" style="width:40%" formControlName='city' placeholder="City" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="fname rounded border" style="width:50%" formControlName='password' placeholder="Your Password" type="password">
+                                    </div>
+                                    <div class="form-group" >
+                                        <input class="fname rounded border" style="width:100%" formControlName='confirmpassword' name="password" placeholder="Confirm Password" required="" type="password">
+                                    </div>
+                                    <div class="fname form-group">
+                                        <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                    </div>
+                         </form>
+                        </div>
+                    </div>
+                </div>
+    </div></div>
+        </div>
+{% endblock %}
+</body>
+</html>

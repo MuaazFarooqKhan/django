@@ -1,0 +1,117 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <!-- Bootstrap core CSS     -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <!--apni css-->
+
+    <link href="{% static 'css/home.css' %}" rel="stylesheet" />
+
+
+    <!-- Animation library for notifications   -->
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+
+    <!--     Fonts and icons     -->
+{#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
+{#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
+    <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/slick.css' %}">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/slick-theme.css' %}">
+
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style1.css' %}">
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+<!--Load the path to your static file-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="{% static 'music/style.css' %}"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+{#        logo#}
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" href="/login/">Viberr</a>
+        </div>
+{#        Items#}
+        <div class="collapse navbar-collapse" id="topNavBar">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/login/">
+                        <span class="glyphicon glyphicon-cd" aria-hidden="true"></span>&nbsp; Album
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        <span class="glyphicon glyphicon-music" aria-hidden="true"></span>&nbsp; Song
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+{% block body %}
+{% endblock %}
+</body>
+</html>

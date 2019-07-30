@@ -1,0 +1,134 @@
+html,body{
+    background-color: #cbb4d4;
+    background-size: cover;
+background-repeat: no-repeat;
+height: auto;
+font-family: 'Numans', sans-serif;
+}
+.from{
+    margin-top: 3%;
+    padding-left: 5%;
+    float: left;
+}
+.to{
+    margin-top: 3%;
+    padding-left: 5%;
+    float: left;
+}
+.bttn{
+    border-width: 5px;
+    font-size: 2rem;
+    border-radius: 3.25rem;
+}
+form.group{
+    margin-left: 10%
+}
+.button
+{
+    width: 8%;
+    height: 40px;
+    float: left;
+}
+.butn
+{
+    width: 8%;
+    height: 40px;
+    margin:  2px;
+    padding: 4px;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+.plane {
+  margin: 20px auto;
+  max-width: 300px;
+}
+.cockpit {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 5px solid #d8d8d8;
+
+}
+.exit {
+  position: relative;
+  height: 50px;
+}
+.exit.before.after{
+    content: "EXIT";
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0px 2px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    display: block;
+    position: absolute;
+    background: green;
+    color: white;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    right: 0;
+
+  }
+.fuselage {
+  border-right: 5px solid #d8d8d8;
+  border-left: 5px solid #d8d8d8;
+}
+ol {
+  list-style :none;
+  padding: 0;
+  margin: 0;
+}
+.seats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.seat {
+  display: flex;
+  flex: 0 0 14.28571428571429%;
+  padding: 5px;
+  position: relative;
+  /*&:nth-child(3) {*/
+    /*margin-right: 14.28571428571429%;*/
+  /*}*/
+  /*input[type=checkbox] {*/
+    /*position: absolute;*/
+    /*opacity: 0;*/
+  /*}*/
+  /*input[type=checkbox]:checked {*/
+    /*+ label {*/
+      /*background: #bada55;      */
+      /*-webkit-animation-name: rubberBand;*/
+          /*animation-name: rubberBand;*/
+      /*animation-duration: 300ms;*/
+      /*animation-fill-mode: both;*/
+    /*}*/
+  /*}*/
+  /*input[type=checkbox]:disabled {*/
+    /*+ label {*/
+      /*background: #dddddd;*/
+      /*text-indent: -9999px;*/
+      /*overflow: hidden;*/
+      /*&:after {*/
+        /*content: "X";*/
+        /*text-indent: 0;*/
+        /*position: absolute;*/
+        /*top: 4px;*/
+        /*left: 50%;*/
+        /*transform: translate(-50%, 0%);*/
+      /*}*/
+      /*&:hover {*/
+        /*box-shadow: none;*/
+        /*cursor: not-allowed;*/
+      /*}*/
+    /*}*/
+  }

@@ -1,0 +1,133 @@
+{#{% extends 'Addthingsheader.html' %}#}
+{#{% load static from staticfiles  %}#}
+{#{% load bootstrap3 %}#}
+{#{% load fontawesome %}#}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#    <meta charset="utf-8">#}
+{#    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />#}
+{##}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">#}
+{#<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />#}
+{#    <meta name="viewport" content="width=device-width" />#}
+{##}
+{#    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />#}
+{#    <!-- Bootstrap core CSS     -->#}
+{#    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />#}
+{##}
+{#    <!--apni css-->#}
+{##}
+{##}
+{##}
+{#    <!-- Animation library for notifications   -->#}
+{#    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>#}
+{##}
+{#    <!--  Light Bootstrap Table core CSS    -->#}
+{#    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>#}
+{##}
+{##}
+{#    <!--  CSS for Demo Purpose, don't include it in your project     -->#}
+{#    <link href="{% static 'css/demo.css' %}" rel="stylesheet" />#}
+{##}
+{#    <!--     Fonts and icons     -->#}
+{#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
+{#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
+{#    <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />#}
+{##}
+{##}
+{##}
+{#    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">#}
+{#  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>#}
+{#  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>#}
+{#</head>#}
+{#<body>#}
+{#{% block body %}#}
+{##}
+{#<div class="content">#}
+{#    <div class="container-fluid">#}
+{#        <div class="row">#}
+{#            <div class="col-md-10" style="margin-left: 7%; margin-right: 7%; margin-top: 5%;">#}
+{#                <div class="card">#}
+{#                    <div class="header">#}
+{#                        <h4 class="title">Routes</h4>#}
+{#                        <hr>#}
+{#                        <div class="content">#}
+{#                            <form action="/routes">#}
+{#                                {%  csrf_token %}#}
+{#                                <div class="row">#}
+{#                                    <div class="from col-md-4">#}
+{#                                        <label class="fromlabel" style="margin-left:20%; float: left">#}
+{#                                            From City#}
+{#                                        </label>#}
+{#                                        <select style="margin-left:10%;">#}
+{#                                            <option value="" class="" selected="selected">--Select Departure--</option>#}
+{#                                            <option label="LAHORE THOKAR" value="number:1">LAHORE THOKAR</option>#}
+{#                                            <option label="RAWALPINDI" value="number:22">RAWALPINDI</option>#}
+{#                                            <option label="MULTAN" value="number:5">MULTAN</option>#}
+{#                                            <option label="FAISALABAD" value="number:16">FAISALABAD</option>#}
+{#                                            <option label="KARACHI" value="number:13">KARACHI</option>#}
+{#                                            <option label="PESHAWAR" value="number:25">PESHAWAR</option>#}
+{#                                            <option disabled="" label="----------------------" value="number:0">----------------------</option>#}
+{#                                        </select>#}
+{#                                    </div>#}
+{##}
+{#                                    <div class="to col-md-5">#}
+{#                                        <label class="tolabel" style="margin-left:40%;">#}
+{#                                            To City#}
+{#                                        </label>#}
+{#                                        <select style="margin-left:10%;">#}
+{#                                            <option value="" class="" selected="selected">--Select Arrival--</option>#}
+{#                                            <option label="FAISALABAD" value="number:16">FAISALABAD</option>#}
+{#                                            <option label="RAWALPINDI" value="number:22" selected="selected">RAWALPINDI</option>#}
+{#                                            <option label="SARGODHA" value="number:21">SARGODHA</option>#}
+{#                                            <option disabled="" label="----------------------" value="number:0">----------------------</option>#}
+{#                                        </select>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <!-- <div class="buttonroute tab-pane">#}
+{##}
+{#                                    <input placeholder="Station" type="text">#}
+{#                                    <button class="btn btn-primary">Add Station</button>#}
+{#                                    <br>#}
+{#                                    <input placeholder="DeleteStation" type="text">#}
+{#                                    <button class="btn btn-primary">Delete Station</button>#}
+{#                                </div> -->#}
+{#                                        <div class="col-md-4">#}
+{#                                            <div class="form-group">#}
+{#                                                <input type="text" class="form-control" placeholder="Username" name="username">#}
+{#                                                <input type="text" class="form-control" placeholder="Bus" name="busno" style="margin-left: 100%; margin-top: 3%">#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                        <div class="col-md-4">#}
+{#                                            <div class="form-group">#}
+{#                                                <h1>{{ myDate|date:'Y-m-d H:i' }}</h1>#}
+{#                                                <input type="datetime-local" class="form-control" name="bdaytime" name="Time" >#}
+{#                                                <input type="text" class="form-control" placeholder="Time" name="Time" style="margin-left: 100%; margin-top: 3%">#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                        <div class="col-md-4">#}
+{#                                            <div class="form-group">#}
+{#                                                <input type="text" class="form-control" placeholder="seats" name="seats" style="margin-left: 100%; margin-top: 3%">#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                        <div class="col-md-4">#}
+{#                                            <div class="form-group">#}
+{#                                                <input type="text" class="form-control" placeholder="Price" name="price" style="margin-left: 100%; margin-top: 3%">#}
+{#                                            </div>#}
+{#                                        </div>#}
+{##}
+{#                                    <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right">Update Profile</button>#}
+{#                            </form>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#{% endblock %}#}
+{#</body>#}
+{#</html>#}

@@ -1,0 +1,172 @@
+{% extends 'headerBt.html' %}
+{% load static from staticfiles  %}
+{% load bootstrap3 %}
+{% load fontawesome %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <!-- Bootstrap core CSS     -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <!--apni css-->
+
+    <link href="{% static 'css/btcancel.css' %}" rel="stylesheet" />
+
+
+    <!-- Animation library for notifications   -->
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="{% static 'css/demo.css' %}" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+{#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
+{#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
+    <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
+
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+    $( "#format" ).on( "change", function() {
+      $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() );
+    });
+  } );
+  </script>
+</head>
+<body>
+{% block body %}
+<div class="cancel">
+    <div class="col-md-12">
+        <div class="card" style="margin-bottom: 30px; margin-left: 3%">
+            <div class="header" style="background-image: linear-gradient(#67b26f,#4ca2cd)">
+                <h4 class="title">Cancel Ticket</h4>
+                <!-- <i class="fab fa-youtube text-danger" style="font-size: 20px" ></i>-->
+            </div>
+            <div class="content">
+                <form>
+                    <div class="row">
+                        <!-- <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Company (disabled)</label>
+                                <input type="text" class="form-control" formControlName='Username'>
+                            </div>
+                        </div> -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input type="text" class="form-control"  formControlName='Username' placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" formControlName='Email' placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" formControlName='firstname' placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" formControlName='lastname' placeholder="Last Name">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Address</label>
+                                <input type="text" class="form-control" formControlName='address' placeholder="Home Address">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>tickets</label>
+                                <input type="text" class="form-control" formControlName='tickets' placeholder="No of Tickets">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Amount</label>
+                                    <input type="text" class="form-control" formControlName='amount' placeholder="Total Amount">
+                                </div>
+                            </div>
+                        <!-- <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Country</label>
+                                <input type="text" class="form-control" formControlName='Username' placeholder="Country" value="Andrew">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Postal Code</label>
+                                <input type="number" class="form-control" formControlName='Username' placeholder="ZIP Code">
+                            </div>
+                        </div>-->
+                    </div>
+                    <button type="submit" class="btn btn-info btn-fill pull-right">Cancel</button>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+            <hr>
+            <div class="footer">
+                 <div class="container">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Company
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+{% endblock %}
+</body>
+</html>

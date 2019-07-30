@@ -1,0 +1,656 @@
+{#{% extends 'headerBt.html' %}#}
+{% load static from staticfiles  %}
+{% load bootstrap3 %}
+{% load fontawesome %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{% load static from staticfiles  %}
+{% load bootstrap3 %}
+{% load fontawesome %}
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <!-- Bootstrap core CSS     -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <!--apni css-->
+
+    <link href="{% static 'css/btbooking.css' %}" rel="stylesheet" />
+
+
+    <!-- Animation library for notifications   -->
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>
+
+
+    <!--     Fonts and icons     -->
+{#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
+{#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
+    <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style1.css' %}">
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+    $( "#format" ).on( "change", function() {
+      $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() );
+    });
+  } );
+  </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+{% block body %}
+
+
+<marquee style="float: left" align="{mid}" direction="left" scrollamount="10" behavior="altenate" scrolldelay="50" loop="" bgcolor="white" width="50%" height="50px" onmouseover="this.stop()" onmouseout="this.start()" class="firstmarquee">
+                    <p class="navtext">
+                        You are the admin of the company. You have the authority of each of every thing like add new bt, new station or can add new busses.
+                    </p>
+                </marquee>
+
+<marquee style="float: left" direction="up" scrollamount="" behavior="altenate" scrolldelay="50" loop="" bgcolor="white" width="50%" height="50px" onmouseover="this.stop()" onmouseout="this.start()" class="secmarquee">
+                        <img src="{% static 'images/1.jpg' %}" alt="">
+
+                        <img src="{% static 'images/3.png' %}" alt="">
+
+                    <img src="{% static 'images/5.png' %}" alt="">
+                </marquee>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="main_nav" aria-controls="main_nav" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse main_nav" id="main_nav">
+                <span class="mr-auto"></span>
+                <a class="button btn btn-outline-primary btn-block" href="/btticket/">Back </a>
+                <form action="/signout">
+                    {%  csrf_token %}
+                    <div class="form-group">
+                        <input type="submit" value="Signout" class="button btn btn-outline-primary btn-block">
+                    </div>
+                </form>
+
+            <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+            </div>
+    </div>
+</nav>
+<div class="col-md-12" style="padding-left: 7%">
+<div class="wrapper">
+        <div class="sidebar" data-color="purple" data-image="assets/images/sidebar-5.jpg">
+        <img class="sidebar" height="500px" src="{% static 'images/sidebar-5.jpg' %}" alt="First slide">
+        <!-- <fa name="cog" animation="spin"></fa> -->
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <h2>
+                <a href="/btticket/">
+                    Bt Things
+                </a>
+                </h2>
+            </div>
+            <ul class="nav">
+                <li class="active">
+                    <h3 style="margin-left: 20%">
+                <a href="/cancel/" >
+                    Cancel
+                </a></h3>
+                </li>
+            </ul>
+{#            <ul class="nav">#}
+{#                    <li class="active" style="padding-left: 10%">#}
+{#                        <h3 >#}
+{#                            <a href="/createbt/" >#}
+{#                                Create Bt#}
+{#                            </a>#}
+{#                        </h3>#}
+{#                    </li>#}
+{#            </ul>#}
+    	</div>
+    </div>
+    </div>
+        <div class="card" style="margin-left: 15%">
+            <div>
+                <h3 style="padding-left: 20%">Ticket Form for BT      :
+                <script> document.write(new Date().toDateString()); </script>
+                </h3>
+                <hr>
+                <div class="header" style="     background-image: linear-gradient(#c33764, #1d2671);">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <form>
+                                <div class="row" style="margin-top:1%; margin-left:1%; margin-right: 1%">
+                            <div class="col-md-12" >
+                                <div class="card">
+                                     <div class="header" style="background-image: linear-gradient(#42275a, #734b6d)   ">
+                                        <h4 class="title" style="margin-top:16px; margin-left:16px; color: white">Search Schdule</h4>                                         <!-- <i class="fab fa-youtube text-danger" style="font-size: 20px" ></i>-->
+                                         <!-- <i class="fab fa-youtube text-danger" style="font-size: 20px" ></i>-->
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <label class="fromlabel" style="margin-top:3%; padding-left:5%; float: left; color: black">
+                                                From City:-
+                                            </label>
+                                            <div class="from" style="margin-top:3%; padding-left:5%; float: left">
+                                                <select>
+                                                    <option value="" class="" selected="selected">--Select Departure--</option>
+                                                    <option label="LAHORE THOKAR" value="number:1">LAHORE THOKAR</option>
+                                                    <option label="RAWALPINDI" value="number:22">RAWALPINDI</option>
+                                                    <option label="MULTAN" value="number:5">MULTAN</option>
+                                                    <option label="FAISALABAD" value="number:16">FAISALABAD</option>
+                                                    <option label="KARACHI" value="number:13">KARACHI</option>
+                                                    <option label="PESHAWAR" value="number:25">PESHAWAR</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label class="tolabel" style="color: black; margin-top:3%; margin-left:15%; float: left;">
+                                                To City:-
+                                            </label>
+                                            <div class="to" style="margin-top:3%; padding-left:5%; float: left">
+                                                <select>
+                                                    <option value="" class="" selected="selected">--Select Departure--</option>
+                                                    <option label="SADIQABAD" value="number:7">SADIQABAD</option>
+                                                    <option label="SAHIWAL" value="number:2">SAHIWAL</option>
+                                                    <option label="SAKRAND" value="number:117">SAKRAND</option>
+                                                    <option label="SEHWAN " value="number:100">SEHWAN </option>
+                                                    <option label="SUKKUR" value="number:10">SUKKUR</option>
+                                                </select>
+                                            </div>
+                                        </div> <input id="input" width="312" style="float: left; padding-left: 5%; padding-top: 2%" /><script>
+        $('#input').datetimepicker({ footer: true, modal: true });
+    </script>
+{#                                            <p style="float: left; padding-left: 5%; padding-top: 2%">Date:<input type="text" id="datepicker" size="30"></p>#}
+                                                <p style="float: left; padding-left: 10%; padding-top: 2%">Format options:
+                                                    <select id="format">
+                                                        <option value="mm/dd/yy">Default - mm/dd/yy</option>
+                                                        <option value="d M, y">Short - d M, y</option>
+                                                        <option value="d MM, y">Medium - d MM, y</option>
+                                                        <option value="DD, d MM, yy">Full - DD, d MM, yy</option>
+                                                    </select>
+                                                </p>
+                                            <a class="btn btn-primary" href="/add_book/" style="float: right">Search</a>
+                                          <div class="container"><br>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Author</th>
+                    <th>Actioins</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for book in books %}
+
+                    <tr>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.price }}</td>
+                    <td>{{ book.author }}</td>
+                    <td><a class="btn btn-info" href="/edit/{{ book.id }}">Edit</a>
+                        <a class="btn btn-danger" href="/delete/{{ book.id }}">Delete</a>
+                    </td>
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+
+                                    <div>
+                                        <div class="plane">
+  <div class="cockpit">
+    <h1>Please select a seat</h1>
+  </div>
+  <div class="exit exit--front fuselage">
+
+  </div>
+  <ol class="cabin fuselage">
+    <li class="row row--1">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="1A" />
+          <label for="1A">1A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1B" />
+          <label for="1B">1B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1C" />
+          <label for="1C">1C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" disabled id="1D" />
+          <label for="1D">Occupied</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1E" />
+          <label for="1E">1E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1F" />
+          <label for="1F">1F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--2">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="2A" />
+          <label for="2A">2A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2B" />
+          <label for="2B">2B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2C" />
+          <label for="2C">2C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2D" />
+          <label for="2D">2D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2E" />
+          <label for="2E">2E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2F" />
+          <label for="2F">2F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--3">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="3A" />
+          <label for="3A">3A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3B" />
+          <label for="3B">3B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3C" />
+          <label for="3C">3C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3D" />
+          <label for="3D">3D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3E" />
+          <label for="3E">3E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3F" />
+          <label for="3F">3F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--4">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="4A" />
+          <label for="4A">4A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4B" />
+          <label for="4B">4B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4C" />
+          <label for="4C">4C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4D" />
+          <label for="4D">4D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4E" />
+          <label for="4E">4E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4F" />
+          <label for="4F">4F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--5">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="5A" />
+          <label for="5A">5A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5B" />
+          <label for="5B">5B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5C" />
+          <label for="5C">5C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5D" />
+          <label for="5D">5D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5E" />
+          <label for="5E">5E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5F" />
+          <label for="5F">5F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--6">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="6A" />
+          <label for="6A">6A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6B" />
+          <label for="6B">6B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6C" />
+          <label for="6C">6C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6D" />
+          <label for="6D">6D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6E" />
+          <label for="6E">6E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6F" />
+          <label for="6F">6F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--7">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="7A" />
+          <label for="7A">7A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7B" />
+          <label for="7B">7B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7C" />
+          <label for="7C">7C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7D" />
+          <label for="7D">7D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7E" />
+          <label for="7E">7E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7F" />
+          <label for="7F">7F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--8">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="8A" />
+          <label for="8A">8A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8B" />
+          <label for="8B">8B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8C" />
+          <label for="8C">8C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8D" />
+          <label for="8D">8D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8E" />
+          <label for="8E">8E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8F" />
+          <label for="8F">8F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--9">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="9A" />
+          <label for="9A">9A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9B" />
+          <label for="9B">9B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9C" />
+          <label for="9C">9C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9D" />
+          <label for="9D">9D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9E" />
+          <label for="9E">9E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9F" />
+          <label for="9F">9F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--10">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="10A" />
+          <label for="10A">10A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10B" />
+          <label for="10B">10B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10C" />
+          <label for="10C">10C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10D" />
+          <label for="10D">10D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10E" />
+          <label for="10E">10E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10F" />
+          <label for="10F">10F</label>
+        </li>
+      </ol>
+    </li>
+      <li class="row row--11">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="11A" />
+          <label for="11A">11A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="11B" />
+          <label for="11B">11B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="11C" />
+          <label for="11C">11C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="11E" />
+          <label for="11E">11E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="11F" />
+          <label for="11F">11F</label>
+        </li>
+      </ol>
+    </li>
+  </ol>
+  <div class="exit exit--back fuselage">
+
+  </div>
+</div>
+                                    </div>
+
+
+                                    </div>
+                                    <!-- <div style="margin-left:5%">
+                                <div style="float:left; padding-right:3%">
+                                    <label class="lab hidden-xs hidden-sm">
+                                        &nbsp;
+                                    </label>
+                                    <button class="btn btn-primary">Booking ticket</button>
+                                    <button id="btnsearchschedule" class="button button-block button-secondary get-schedule-main-button" type="button" data-ng-click="GetSchedule();">Get Schedule</button>
+                                </div>
+                                <div>
+                                    <label class="lab hidden-xs hidden-sm">
+                                        &nbsp;
+                                    </label>
+                                    <button class="btn btn-primary">Advance Booking ticket</button>
+                                </div>
+                            </div> -->
+                                </div>
+                            </div>
+                        </div>         <!-- Start Autosuggest textbox for hotels/tours -->
+
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="form-group" style="margin-left: 10%">
+                                                    <label style="color: black">Username</label>
+                                                    <input type="text" class="form-control" formControlName='Username' placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="form-group">
+                                                    <label style="color: black">Phone no.</label>
+                                                    <input type="text" class="form-control" formControlName='phoneno' placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="form-group" style="margin-left: 10%">
+                                                    <label style="color: black">CNIC</label>
+                                                    <input type="text" class="form-control" formControlName='cnic' placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1" style="color: black">Email</label>
+                                                    <input type="email" class="form-control" formControlName='Email' placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="form-group" style="margin-left: 10%">
+                                                    <label for="exampleInputEmail1" style="color: black">Amount</label>
+                                                    <input type="email" class="form-control" formControlName='amount' placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1" style="color: black">No. of Seats</label>
+                                                    <input type="email" class="form-control" formControlName='noofseats' placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="form-group" style="margin-left: 10%">
+                                                    <label for="exampleInputEmail1" style="color: black">Seats No.</label>
+                                                    <input type="email" class="form-control" formControlName='seatsno' placeholder="Email">
+                                                </div>
+                                            </div>
+                                             <button type="submit" class="button btn btn-dark">Confirm</button>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="footer">
+                        <div class="container">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#" style="color: white">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" style="color: white">
+                                    Company
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" style="color: white">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" style="color: white">
+                                   Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>
