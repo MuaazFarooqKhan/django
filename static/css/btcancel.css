@@ -3,9 +3,9 @@
     margin-top: 3%;
 }
 html,body{
-background-image: linear-gradient(#9cecfb, #65c7f7, #0052d4);
-background-size: cover;
-background-repeat: no-repeat;
-height: auto;
-font-family: 'Numans', sans-serif;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: 'Numans', sans-serif;
 }
