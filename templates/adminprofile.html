@@ -24,10 +24,10 @@
 
 
     <!-- Animation library for notifications   -->
-    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>
-
-    <!--  Light Bootstrap Table core CSS    -->
-    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>
+{#    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>#}
+{##}
+{#    <!--  Light Bootstrap Table core CSS    -->#}
+{#    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>#}
 
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -53,75 +53,75 @@
 {#                    </p>#}
 {#                </marquee>#}
 <div class="row">
-    <div class="wrapper">
-        <div class="sidebar" data-color="blue" data-image="assets/images/sidebar-5.jpg">
-        <img class="sidebar" height="500px" src="{% static 'images/sidebar-5.jpg' %}" alt="First slide">
-        <!-- <fa name="cog" animation="spin"></fa> -->
-
-    <!--
-
-        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
-        Tip 2: you can also add an image using data-image tag
-
-    -->
-
-    	    <div class="sidebar-wrapper">
-                <div class="logo">
-                     <h2>
-                         <a href="/adminprofile/">
-                              Admin Panel
-                         </a>
-                     </h2>
-                </div>
-            <ul class="nav">
-                <li class="active">
-                    <h3 style="margin-left: 20%">
-                <a href="/performance/" >
-                    Statistics
-                </a></h3>
-                </li>
-            </ul>
-            <ul class="nav">
-                    <li class="active" style="padding-left: 10%">
-                        <h3 >
-                            <a href="/createbt/" >
-                                Create Bt
-                            </a>
-                        </h3>
-                    </li>
-            </ul>
-                <ul class="nav">
-                    <li class="active" style="padding-left: 10%">
-                        <h3 >
-                            <a href="/deletebt/" >
-                                Delete Bt
-                            </a>
-                        </h3>
-                    </li>
-            </ul>
-             <ul class="nav">
-                 <li class="active" style="padding-left: 10%">
-                     <h3 >
-                         <a href="/addthings/" >
-                             Add Things
-                         </a>
-                     </h3>
-                 </li>
-             </ul>
-              <ul class="nav">
-                 <li class="active" style="padding-left: 10%">
-                     <h3 >
-                         <a href="/adminsearch/" >
-                             Search
-                         </a>
-                     </h3>
-                 </li>
-                </ul>
-
-    	    </div>
-        </div>
-    </div>
-            <div class="col-md-5" style="margin-left: 38%; margin-top: 3%">
+{#    <div class="wrapper">#}
+{#        <div class="sidebar" data-color="blue" data-image="assets/images/sidebar-5.jpg">#}
+{#        <img class="sidebar" height="500px" src="{% static 'images/sidebar-5.jpg' %}" alt="First slide">#}
+{#        <!-- <fa name="cog" animation="spin"></fa> -->#}
+{##}
+{#    <!--#}
+{##}
+{#        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"#}
+{#        Tip 2: you can also add an image using data-image tag#}
+{##}
+{#    -->#}
+{##}
+{#    	    <div class="sidebar-wrapper">#}
+{#                <div class="logo">#}
+{#                     <h2>#}
+{#                         <a href="/adminprofile/">#}
+{#                              Admin Panel#}
+{#                         </a>#}
+{#                     </h2>#}
+{#                </div>#}
+{#            <ul class="nav">#}
+{#                <li class="active">#}
+{#                    <h3 style="margin-left: 20%">#}
+{#                <a href="/performance/" >#}
+{#                    Statistics#}
+{#                </a></h3>#}
+{#                </li>#}
+{#            </ul>#}
+{#            <ul class="nav">#}
+{#                    <li class="active" style="padding-left: 10%">#}
+{#                        <h3 >#}
+{#                            <a href="/createbt/" >#}
+{#                                Create Bt#}
+{#                            </a>#}
+{#                        </h3>#}
+{#                    </li>#}
+{#            </ul>#}
+{#                <ul class="nav">#}
+{#                    <li class="active" style="padding-left: 10%">#}
+{#                        <h3 >#}
+{#                            <a href="/deletebt/" >#}
+{#                                Delete Bt#}
+{#                            </a>#}
+{#                        </h3>#}
+{#                    </li>#}
+{#            </ul>#}
+{#             <ul class="nav">#}
+{#                 <li class="active" style="padding-left: 10%">#}
+{#                     <h3 >#}
+{#                         <a href="/addthings/" >#}
+{#                             Add Things#}
+{#                         </a>#}
+{#                     </h3>#}
+{#                 </li>#}
+{#             </ul>#}
+{#              <ul class="nav">#}
+{#                 <li class="active" style="padding-left: 10%">#}
+{#                     <h3 >#}
+{#                         <a href="/adminsearch/" >#}
+{#                             Search#}
+{#                         </a>#}
+{#                     </h3>#}
+{#                 </li>#}
+{#                </ul>#}
+{##}
+{#    	    </div>#}
+{#        </div>#}
+{#    </div>#}
+            <div class="col-md-5" style="margin-left: 30%; margin-top: 3%">
                 <div class="card card-user">
                     <div class="image">
                         <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..." />
@@ -131,14 +131,13 @@
                             <a href="#">
                                 <img class="avatar border-gray" src="{% static 'images/face-3.jpg' %}" alt="..." />
 
-                                <h4 class="title">Mike Andrew<br />
-                             <small>michael24</small>
+                                <h4 class="title">{{ com_username }} {{ com_userlastname }}<br />
+                             <small>{{ com_name }}</small>
                           </h4>
                             </a>
                         </div>
-                        <p class="description text-center"> "Lamborghini Mercy
-                            <br> Your chick she so thirsty
-                            <br> I'm in that two seat Lambo"
+                        <p class="description text-center">
+                          {{ companyemail }}
                         </p>
                     </div>
                 </div>
@@ -147,7 +146,7 @@
 <div class="content">
             <div class="container-fluid">
     <div class="row">
-            <div class="col-md-8"  style="margin-top: 2%; margin-left: 25%">
+            <div class="col-md-8"  style="margin-top: 2%; margin-left: 18%">
                     <div class="card">
                         <div class="header">
                             <h4 class="title">Edit Profile</h4>
@@ -233,31 +232,31 @@
                                 <div class="clearfix"></div> -->
 
                                 <div class="form-group">
-                                        <input class="fname rounded border" style="width:30%" formControlName='Username' placeholder="UserName" type="text">
+                                        <input class="fname rounded border" style="width:30%" formControlName='Username' placeholder="UserName" type="text" value="{{ com_name }}">
                                     </div>
                                 <div class="form-group">
-                                        <input class="fname rounded border" style="width:30%" formControlName='firstname' placeholder="Your First Name" type="text">
+                                        <input class="fname rounded border" style="width:30%" formControlName='firstname' placeholder="Your First Name" type="text" value="{{ com_username }}">
                                          <!--agr koi cheaz lazmi required ho or msg py btana ho ky esy fill kro-->
                                          <!--ISSUE-->
                                          <!-- <span *ngIf="!signupForm.get('fname').valid">First Name is Required</span> -->
                                     </div>
                                     <div class="form-group">
-                                        <input class="fname rounded border" style="width:30%" formControlName='lastname' placeholder="Your Last Name" type="text">
+                                        <input class="fname rounded border" style="width:30%" formControlName='lastname' placeholder="Your Last Name" type="text" value="{{ com_userlastname }}">
                                     </div>
                                     <div class="form-group">
-                                            <input class="fname rounded border" style="width:100%" formControlName='Email' placeholder="Your Email ID" type="text">
+                                            <input class="fname rounded border" style="width:100%" formControlName='Email' placeholder="Your Email ID" type="text" value="{{ companyemail }}">
                                     </div>
                                     <div class="form-group">
-                                        <input class="fname rounded border" style="width:40%" formControlName='city' placeholder="City" type="text">
+{#                                        <input class="fname rounded border" style="width:40%" formControlName='city' placeholder="City" type="text">#}
                                     </div>
                                     <div class="form-group">
-                                        <input class="fname rounded border" style="width:50%" formControlName='password' placeholder="Your Password" type="password">
+                                        <input class="fname rounded border" style="float: left;width:30%" formControlName='password' placeholder="Your Password" type="password">
                                     </div>
                                     <div class="form-group" >
-                                        <input class="fname rounded border" style="width:100%" formControlName='confirmpassword' name="password" placeholder="Confirm Password" required="" type="password">
+                                        <input class="fname rounded border" style="width:30%" formControlName='confirmpassword' name="password" placeholder="Confirm Password" required="" type="password">
                                     </div>
                                     <div class="fname form-group">
-                                        <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                        <a class="btn btn-info btn-fill pull-right" href="/edit/{{ up.id }}">Update Profile</a>
                                     </div>
                          </form>
                         </div>

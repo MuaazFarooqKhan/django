@@ -24,56 +24,26 @@
     <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>
 
     <!--  Light Bootstrap Table core CSS    -->
-    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>
+{#    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>#}
 
     <!--     Fonts and icons     -->
 {#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
 {#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
     <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/slick.css' %}">
 
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/slick-theme.css' %}">
 
-
-
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style1.css' %}">
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 
-
-
-
-
-
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css"/>
 
 </head>
 
@@ -94,40 +64,90 @@
 
                     <img src="{% static 'images/5.png' %}" alt="">
                 </marquee>
+{#<nav class="navbar navbar-inverse">#}
+{#    <div class="container-fluid">#}
+{#        logo#}
+{#        <div class="navbar-header">#}
+{#            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">#}
+{#                <span class="icon-bar"></span>#}
+{#                <span class="icon-bar"></span>#}
+{#                <span class="icon-bar"></span>#}
+{##}
+{#            </button>#}
+{#            <a class="navbar-brand">Viberr</a>#}
+{#        </div>#}
+{#        Items#}
+{#        <div class="collapse navbar-collapse" id="topNavBar">#}
+{#            <ul class="nav navbar-nav">#}
+{#                <li class="active">#}
+{#                    <a style="float: right">#}
+{#                        <span class="glyphicon glyphicon-cd" aria-hidden="true"></span>&nbsp; Album#}
+{#                    </a>#}
+{#                </li>#}
+{#                <li class="">#}
+{#                    <a style="float: right; padding-top: 1%" >#}
+{#                        <span class="glyphicon glyphicon-music" aria-hidden="true"></span>&nbsp; Song#}
+{#                    </a>#}
+{#                </li>#}
+{#            </ul>#}
+{##}
+{#        </div>#}
+{#    </div>#}
+{#</nav>#}
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary navbar-icons" style="margin-bottom: 0%">
+    <div class="container-fluid">
+{#        logo#}
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                <a class="navbar-brand" style="color: white">Expand</a>
+            </button>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                                <div class="container">
- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="main_nav" aria-controls="main_nav" aria-expanded="true" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-            <div class="collapse navbar-collapse main_nav" id="main_nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                            <a class="nav-link" href="#">Fashion</a>
-                          </li>
+        </div>
+{#        Items#}
+        <div class="collapse navbar-collapse" id="topNavBar">
+            <ul class="nav navbar-nav">
                     <li class="nav-item pl-0">
-                        <a class="nav-link" style="color:blue" href="#">Home <span class="sr-only">(current)</span></a>
-                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color:blue" href="#services">Services</a>
+                        <h4>
+                            <a onmouseover="this.style.color='lightblue';" onmouseout="this.style.color='black';" class="nav-link" style="color:Black; margin-left: 10px" href="#">Home <span class="sr-only">(current)</span></a>
+                        </h4>
                     </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:blue" href="#contact">Contact us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" style="color:blue" href="#" id="navbarDropdown">
-              Registration
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a>User</a>
-                        <br/>
-                        <a>Company</a>
-                        <br/>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:blue" href="#about">About us</a>
-                </li>
+                    <li class="nav-item">
+                        <h4>
+                                                    <a class="nav-link" style="color:Black;  margin-left: 10px" href="#services" onmouseover="this.style.color='lightblue';" onmouseout="this.style.color='black';">Services</a>
+
+                        </h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4>
+                                                    <a class="nav-link" style="color:Black; margin-left: 10px" href="#contact" onmouseover="this.style.color='lightblue';" onmouseout="this.style.color='black';">Contact us</a>
+
+                        </h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4>
+                                                    <a class="nav-link" style="color:Black; margin-left: 10px" href="#about" onmouseover="this.style.color='lightblue';" onmouseout="this.style.color='black';">About us</a>
+                        </h4>
+                    </li>
+                <div class="dropdown" style="margin-top: 2%; margin-left: 10px">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Registrations
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/callcompanyregister">Company Registeration</a>
+    <a class="dropdown-item" href="/registrationforuser">Registration For User</a>
+  </div>
+</div>
+{#                    <li class="nav-item">#}
+{#                        <h4>#}
+{#                            <a class="nav-link" style="color:Black; margin-left: 200px" href="/companyregister/" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Company Registration</a>#}
+{#                        </h4>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <h4>#}
+{#                            <a class="nav-link" style="color:Black" href="/registrationforuser/" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">User Registration</a>#}
+{#                        </h4>#}
+{#                    </li>#}
+
 
                 <!-- <li class="nav-item">
         <a class="nav-link disabled" style="color:blue" href="#">Disabled</a>
@@ -135,22 +155,81 @@
             </ul>
                     <span class="mr-auto"></span>
 
-                <a class="button btn btn-outline-primary btn-block" href="/login/">Login</a>
-                <a class="button btn btn-outline-primary btn-block" href="/companyregister/">Company</a>
+                <a aria-expanded="false" style="margin-left: 40%" class="bttttn btn btn-primary" href="/login/">Login </a>
+{#                <a class="bttttn btn btn-outline-primary" href="/companyregister/">Company</a>#}
                 <form action="/signout">
-                        {%  csrf_token %}
-                        <div class="form-group">
-						    <input type="submit" value="Signout" class="btn float-right login_btn">
-					    </div>
-                    </form>
+                    {%  csrf_token %}
+                    <div class="form-group">
+                        <input style="width: 8% ;margin-left: 90%; margin-top: -55px" type="submit" value="Signout" class="button btn btn-primary btn-block">
+                    </div>
+                </form>
 
-            <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
         </div>
-                                </div>
-    </nav>
+    </div>
+</nav>
+{#<nav class="navbar navbar-expand-lg navbar-light bg-secondary" style="margin-bottom: 0px">#}
+{#                                <div class="container">#}
+{# <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="main_nav" aria-controls="main_nav" aria-expanded="true" aria-label="Toggle navigation">#}
+{#                        <span class="navbar-toggle-icon"></span>#}
+{#                      </button>#}
+{#            <div class="collapse navbar-collapse" id="main_nav">#}
+{#                <ul class="nav navbar-nav">#}
+{#                    <li class="nav-item pl-0">#}
+{#                        <h4>#}
+{#                            <a onmouseover="this.style.color='red';" onmouseout="this.style.color='black';" class="nav-link" style="color:Black;" href="#">Home <span class="sr-only">(current)</span></a>#}
+{#                        </h4>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <h4>#}
+{#                                                    <a class="nav-link" style="color:Black;  margin-left: 10px" href="#services" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Services</a>#}
+{##}
+{#                        </h4>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <h4>#}
+{#                                                    <a class="nav-link" style="color:Black; margin-left: 10px" href="#contact" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Contact us</a>#}
+{##}
+{#                        </h4>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <h4>#}
+{#                                                    <a class="nav-link" style="color:Black; margin-left: 10px" href="#about" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">About us</a>#}
+{#                        </h4>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <h4>#}
+{#                            <a class="nav-link" style="color:Black; margin-left: 200px" href="/companyregister/" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Company Registration</a>#}
+{#                        </h4>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <h4>#}
+{#                            <a class="nav-link" style="color:Black" href="/registrationforuser/" onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">User Registration</a>#}
+{#                        </h4>#}
+{#                    </li>#}
+{##}
+{##}
+{#                <!-- <li class="nav-item">#}
+{#        <a class="nav-link disabled" style="color:blue" href="#">Disabled</a>#}
+{#      </li> -->#}
+{#            </ul>#}
+{#                    <span class="mr-auto"></span>#}
+{##}
+{#                <a style="margin-left: 50%" class="bttttn btn btn-primary" href="/login/">Login </a>#}
+{#                <a class="bttttn btn btn-outline-primary" href="/companyregister/">Company</a>#}
+{#                <form action="/signout">#}
+{#                    {%  csrf_token %}#}
+{#                    <div class="form-group">#}
+{#                        <input style="width: 8% ;margin-left: 90%; margin-top: -55px" type="submit" value="Signout" class="button btn btn-primary btn-block">#}
+{#                    </div>#}
+{#                </form>#}
+{##}
+{#            <!-- <form class="form-inline my-2 my-lg-0">#}
+{#      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">#}
+{#      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
+{#    </form> -->#}
+{#        </div>#}
+{#                                </div>#}
+{#    </nav>#}
     <!-- <form>
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
@@ -196,47 +275,53 @@
               <div id="ch" class="home-wrap">
                   <div id="home-slick">
                       <div class="banner banner-1">
-                          <img src="https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="">
-                          <div class="banner-caption text-center">
-                              <h1 class="primary-color">Bags sale</h1>
-                              <h3 class="white-color font-weak">Up to 50% Discount</h3>
-                              <button class="primary-btn">Shop Now</button>
-                          </div>
+                          <img src="{% static 'images/bus (3).jpg' %}" alt="">
+{#                          <div class="banner-caption">#}
+{#                              <h1 class="white-color">New Product <span>Collection</span></h1>#}
+{#                              <button class="primary-btn">Shop Now</button>#}
+{#                          </div>#}
                       </div>
                       <div class="banner banner-1">
-                          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="">
-                          <div class="banner-caption">
-                              <h1 class="primary-color">HOT DEAL<br><span class="white-color font-weak">Up to 50% OFF</span></h1>
-                              <button class="primary-btn">Shop Now</button>
-                          </div>
+                          <img src="{% static 'images/in.jpg' %}" alt="">
+{#                          <div class="banner-caption">#}
+{#                              <h1 class="white-color">New Product <span>Collection</span></h1>#}
+{#                              <button class="primary-btn">Shop Now</button>#}
+{#                          </div>#}
                       </div>
                       <div class="banner banner-1">
-                          <img src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fpsh-ex-ftnikkei-3937bb4%2Fimages%2F3%2F6%2F0%2F5%2F15535063-2-eng-GB%2F20180904N%20Yangon%20buses.jpg?source=nar-cms" alt="">
-                          <div class="banner-caption">
-                              <h1 class="white-color">New Product <span>Collection</span></h1>
-                              <button class="primary-btn">Shop Now</button>
-                          </div>
+                          <img src="{% static 'images/bus2.jpg' %}" alt="">
+{#                          <div class="banner-caption">#}
+{#                              <h1 class="white-color">New Product <span>Collection</span></h1>#}
+{#                              <button class="primary-btn">Shop Now</button>#}
+{#                          </div>#}
                       </div>
                       <div class="banner banner-1">
-                          <img src="https://www.starrtours.com/wp-content/uploads/2015/01/starr-bus-road-away.jpg" alt="">
-                          <div class="banner-caption">
-                              <h1 class="white-color">New Product <span>Collection</span></h1>
-                              <button class="primary-btn">Shop Now</button>
-                          </div>
+                          <img src="{% static 'images/bus1.jpg' %}" alt="">
+{#                          <div class="banner-caption">#}
+{#                              <h1 class="white-color">New Product <span>Collection</span></h1>#}
+{#                              <button class="primary-btn">Shop Now</button>#}
+{#                          </div>#}
                       </div>
                       <div class="banner banner-1">
-                          <img src="https://i.ytimg.com/vi/s3ePAHnFOms/maxresdefault.jpg" alt="">
-                          <div class="banner-caption">
-                              <h1 class="white-color">New Product <span>Collection</span></h1>
-                              <button class="primary-btn">Shop Now</button>
-                          </div>
+                          <img src="{% static 'images/inn.jpg' %}" alt="">
+{#                          <div class="banner-caption">#}
+{#                              <h1 class="white-color">New Product <span>Collection</span></h1>#}
+{#                              <button class="primary-btn">Shop Now</button>#}
+{#                          </div>#}
                       </div>
                       <div class="banner banner-1">
-                          <img src="https://i.ytimg.com/vi/CFlBtMD2Qis/maxresdefault.jpg" alt="">
-                          <div class="banner-caption">
-                              <h1 class="white-color">New Product <span>Collection</span></h1>
-                              <button class="primary-btn">Shop Now</button>
-                          </div>
+                          <img src="{% static 'images/bus3.jpg' %}" alt="">
+{#                          <div class="banner-caption">#}
+{#                              <h1 class="white-color">New Product <span>Collection</span></h1>#}
+{#                              <button class="primary-btn">Shop Now</button>#}
+{#                          </div>#}
+                      </div>
+                      <div class="banner banner-1">
+                          <img src="{% static 'images/asd.jpg' %}" alt="">
+{#                          <div class="banner-caption">#}
+{#                              <h1 class="white-color">New Product <span>Collection</span></h1>#}
+{#                              <button class="primary-btn">Shop Now</button>#}
+{#                          </div>#}
                       </div>
                   </div>
               </div>
@@ -244,7 +329,9 @@
 
 
     <div id="about">
-        <h1 style="text-align:center ; background-image: linear-gradient(#a1ffce, #faffd1)">About Us</h1>
+        <div class="about">
+        <h1 style="text-align:center;">About Us</h1>
+            </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="cell-sm-9 cell-md-5" width="720px" height="459px">

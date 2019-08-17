@@ -1,17 +1,18 @@
-{% extends 'adminheader.html' %}
-{% load static from staticfiles  %}
+{#{% extends 'adminheader.html' %}#}
+{% load static from staticfiles %}
 {% load bootstrap3 %}
 {% load fontawesome %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -19,78 +20,117 @@
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
 
     <!--apni css-->
+    <link href="{% static 'css/adminprofile.css' %}" rel="stylesheet" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <link href="{% static 'css/routes.css' %}" rel="stylesheet" />
-
-
+<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style1.css' %}">
     <!-- Animation library for notifications   -->
-    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet" />
 
-    <!--  Light Bootstrap Table core CSS    -->
-    <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/gijgoadmin.min.css' %}" rel="stylesheet" />
+
+    <link href="{% static 'fonts/gijgo-material.woff' %}" rel="stylesheet" />
+
+    <link href="{% static 'fonts/gijgo-material.ttf' %}" rel="stylesheet" />
 
 
-    <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="{% static 'css/demo.css' %}" rel="stylesheet" />
+{#    <link href="{% static 'js/gijgo.min.js' %}" rel="stylesheet"/>#}
 
-    <!--     Fonts and icons     -->
-{#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
-{#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
+
+
     <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
 
-
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style1.css' %}">
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-</head>
-<body>
-{% block body %}
 
-{#<div class="wrapper">#}
-{#        <div class="sidebar" data-color="purple" data-image="assets/images/sidebar-5.jpg">#}
-{#        <img class="sidebar" height="500px" src="{% static 'images/sidebar-5.jpg' %}" alt="First slide">#}
-{#        <!-- <fa name="cog" animation="spin"></fa> -->#}
-{##}
-{#    <!--#}
-{##}
-{#        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"#}
-{#        Tip 2: you can also add an image using data-image tag#}
-{##}
-{#    -->#}
-{##}
-{#    	<div class="sidebar-wrapper">#}
-{#            <div class="logo">#}
-{#                <h2>#}
-{#                <a href="/addthings/">#}
-{#                    Add Things#}
-{#                </a>#}
-{#                </h2>#}
-{#            </div>#}
-{#            <ul class="nav">#}
-{#                <li class="active">#}
-{#                    <h3 style="margin-left: 20%">#}
-{#                <a href="/routes/" >#}
-{#                    Routes#}
-{#                </a></h3>#}
-{#                </li>#}
-{#            </ul>#}
-{#            <ul class="nav">#}
-{#                    <li class="active" >#}
-{#                        <h3 style="padding-left: 18%">#}
-{#                            <a href="/station/" >#}
-{#                                Stations#}
-{#                            </a>#}
-{#                        </h3>#}
+    <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<marquee style="float: left" align="{mid}" direction="left" scrollamount="10" behavior="altenate" scrolldelay="50" loop="" bgcolor="white" width="50%" height="50px" onmouseover="this.stop()" onmouseout="this.start()" class="firstmarquee">
+                    <p class="navtext">
+                        You are the admin of the company. You have the authority of each of every thing like add new bt, new station or can add new busses.
+                    </p>
+                </marquee>
+
+<marquee style="float: left" direction="up" scrollamount="" behavior="altenate" scrolldelay="50" loop="" bgcolor="white" width="50%" height="50px" onmouseover="this.stop()" onmouseout="this.start()" class="secmarquee">
+                        <img src="{% static 'images/1.jpg' %}" alt="">
+
+                        <img src="{% static 'images/3.png' %}" alt="">
+
+                    <img src="{% static 'images/5.png' %}" alt="">
+                </marquee>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button"  class="navbar-toggler" data-toggle="collapse" data-target="main_nav" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <h3 style="margin-right: 32px">
+                            <a href="/adminprofile/">Admin Panel</a>
+                        </h3>
+                    </li>
+                    <li class="nav-item">
+                        <h3 style="margin-right: 32px">
+                            <a href="/createbt/">Creat Bt</a>
+                        </h3>
+                    </li>
+                    <li class="nav-item">
+                        <h3 style="margin-right: 32px">
+                            <a href="/deletebt/">Delete Bt</a>
+                        </h3>
+                    </li>
+                    <li class="nav-item">
+                        <h3 style="margin-right: 32px">
+                            <a href="/addthings/">Add Things</a>
+                        </h3>
+                    </li>
+                    <li class="nav-item">
+                        <h3 style="margin-right: 32px">
+                            <a href="/adminsearch/">Search</a>
+                        </h3>
+                    </li>
+{#                    <li class="nav-item">#}
+{#                        <h5 style="margin-right: 32px">#}
+{#                            <a href="/adminsearch/">{{ com_name }}</a>#}
+{#                        </h5>#}
 {#                    </li>#}
-{#            </ul>#}
-{#    	</div>#}
-{#    </div>#}
-{#</div>#}
+
+                </ul>
+                <span class="mr-auto"></span>
+                <a class="btton btn btn-outline-primary btn-block" href="/adminprofile/">Back </a>
+                <form action="/signout">
+                    {%  csrf_token %}
+                    <div class="form-group">
+                        <input type="submit" value="Signout" class="button btn btn-outline-primary btn-block">
+                    </div>
+                </form>
+
+            <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+            </div>
+    </div>
+</nav>
 <div class="container">
         <div class="row">
             <div class="col-md-6" style="margin-left: 25%; margin-top: 5%">
-                <div class="card" >
+                <div class="card">
                     <div class="header">
                         <h4 class="title">Busses</h4>
                         <hr>
@@ -99,50 +139,15 @@
                                 <div class="col-md-7">
                                     <div class="form-group">
                                         <label style="margin-left: 20%">Bus No.</label>
-                                        <input type="text" class="form-control" formControlName='addbus' placeholder="BusNo" name="seats" style="margin-left: 30%">
+                                        <input type="text" class="form-control" placeholder="BusNo" name="seats" style="margin-left: 30%">
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="margin-left: 20%">Bus Plate No.</label>
+
+                                        <input type="text" class="form-control" placeholder="BusNo" name="platenumber" style="margin-left: 30%">
                                     </div>
                                 </div>
-{#                                <div class="col-md-7">#}
-{#                                    <div class="form-group">#}
-{#                                        <label style="margin-left: 20%">Bus Type</label>#}
-{#                                        <input type="text" class="form-control" formControlName='type' placeholder="Type" name="type" style="margin-left: 30%">#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="col-md-7">#}
-{#                                    <div class="form-group">#}
-{#                                        <label style="margin-left: 20%">Bus Timing</label>#}
-{#                                        <input type="text" class="form-control" formControlName='timing' placeholder="Timing" name="timing" style="margin-left: 30%">#}
-{#                                    </div>#}
-{#                                </div>#}
-                                <!-- <div class="col-md-5">
-                                    <div class="form-group">
-                                        <label>Add Bus Number</label>
-                                        <input type="text" class="form-control" formControlName='addbusno' placeholder="Number">
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="form-group">
-                                        <label>Add Bus Condition</label>
-                                        <input type="text" class="form-control" formControlName='addbuscond' placeholder="Condition">
-                                    </div>
-                                </div> -->
-                                <!-- <div class="col-md-5">
-                                    <div class="form-group">
-                                        <label>Add Bus Timing</label>
-                                        <input type="text" class="form-control" formControlName='addbustime' placeholder="Timing Of Bus">
-                                    </div>
-                                </div> -->
-                                <!-- <div class="buttonroute tab-pane">
-
-                                    <input placeholder="Station" type="text">
-                                    <button class="btn btn-primary">Add Station</button>
-                                    <input placeholder="DeleteStation" type="text">
-                                    <button class="btn btn-primary">Delete Station</button>
-                                </div>
-                                <button type="submit" class="btn btn-info btn-fill pull-right">Add</button> -->
-                                <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right">Add Busses</button>
-
-
+                                <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right; margin-bottom: 3%">Add Busses</button>
                             </form>
                         </div>
 
@@ -159,7 +164,7 @@
                         <h4 class="title">Stations</h4>
                         <div class="content">
                             <form action="/station">
-                                {%  csrf_token %}
+                                {% csrf_token %}
 
                                 <div class="row">
                                     <div class="from col-md-12">
@@ -167,44 +172,37 @@
                                             All Stations
                                         </label>
                                         <select style="margin-left: 5%">
+
                                             <option value="" class="" selected="selected">--Select Departure--</option>
-                                            <option label="LAHORE THOKAR" value="number:1">LAHORE THOKAR</option>
-                                            <option label="RAWALPINDI" value="number:22">RAWALPINDI</option>
-                                            <option label="MULTAN" value="number:5">MULTAN</option>
-                                            <option label="FAISALABAD" value="number:16">FAISALABAD</option>
-                                            <option label="KARACHI" value="number:13">KARACHI</option>
-                                            <option label="PESHAWAR" value="number:25">PESHAWAR</option>
-                                            <option disabled="" label="----------------------" value="number:0">----------------------</option>
+                                            {% for station in mystations %}
+                                            <option value=''>{{ station}}</option>
+                                                {% endfor %}
                                         </select>
+
+{#                                        <select style="margin-left: 5%">#}
+{#                                            {% for st in sta %}#}
+{#                                                <option>{{ st.stationname }}</option>#}
+{#                                            {% endfor %}#}
+{#                                        </select>#}
+
+
+{#                                        <a class="btn btn-danger" href="/delete/{{ bt.id }}">Delete</a>#}
                                     </div>
                                 </div>
-                                <!-- <div class="buttonroute tab-pane">
-
-                                    <input placeholder="Station" type="text">
-                                    <button class="btn btn-primary">Add Station</button>
-                                    <br>
-                                    <input placeholder="DeleteStation" type="text">
-                                    <button class="btn btn-primary">Delete Station</button>
-                                </div> -->
                                 <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-{#                                                <input type="text" class="form-control" placeholder="Username" name="username">#}
-                                                <input type="text" class="form-control" placeholder="Station" name="stationname">
-{#                                                <input type="text" class="form-control" formControlName='addstation' placeholder="Add Station">#}
-                                            </div>
-                                            <button type="submit" class="btn btn-info btn-fill pull-right">Add Station</button>
-
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Station" name="stationname">
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" formControlName='deletestation' placeholder="Delete Station">
-                                            </div>
-                                            <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right">Delete Station</button>
-
+                                        <button type="submit" class="btn btn-info btn-fill pull-right">Add Station</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" formControlName='deletestation' placeholder="Delete Station">
                                         </div>
+                                        <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right">Delete Station</button>
+                                    </div>
                                 </div>
-
                             </form>
                         </div>
                     </div>
@@ -213,88 +211,76 @@
         </div>
     </div>
     <div class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-10" style="margin-left: 8%; margin-right: 7%; margin-top: 1%;">
-                <div class="card">
-                    <div class="header">
-                        <h4 class="title">Routes</h4>
-                        <hr>
-                        <div class="content">
-                            <form action="/routes">
-                                {%  csrf_token %}
-                                <div class="row">
-                                    <div class="from col-md-4">
-                                        <label class="fromlabel" style="margin-left:20%; float: left">
-                                            From City
-                                        </label>
-                                        <select style="margin-left:10%;">
-                                            <option value="" class="" selected="selected">--Select Departure--</option>
-                                            <option label="LAHORE THOKAR" value="number:1">LAHORE THOKAR</option>
-                                            <option label="RAWALPINDI" value="number:22">RAWALPINDI</option>
-                                            <option label="MULTAN" value="number:5">MULTAN</option>
-                                            <option label="FAISALABAD" value="number:16">FAISALABAD</option>
-                                            <option label="KARACHI" value="number:13">KARACHI</option>
-                                            <option label="PESHAWAR" value="number:25">PESHAWAR</option>
-                                            <option disabled="" label="----------------------" value="number:0">----------------------</option>
-                                        </select>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10" style="margin-left: 8%; margin-right: 7%; margin-top: 1%;">
+                    <div class="card">
+                        <div class="header">
+                            <h4 class="title">Routes</h4>
+                            <hr>
+                            <div class="content">
+                                <form action="/routes">
+                                    {% csrf_token %}
+                                    <div class="row">
+                                        <div class="from col-md-4">
+                                            <label class="fromlabel" style="margin-left:20%; float: left">
+                                                From City
+                                            </label>
+                                            <select style="margin-left:50%;">
+                                                <option value="" class="" selected="selected">--Select Departure--</option>
+                                            {% for r in rou %}
+                                            <option value=''>{{ r }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+
+                                        <div class="to col-md-5">
+                                            <label class="tolabel" style="margin-left:40%; float: left">
+                                                To City
+                                            </label>
+                                            <select style="margin-left:60%;">
+                                                <option value="" class="" selected="selected">--Select Departure--</option>
+                                            {% for r in rou %}
+                                            <option value=''>{{ r}}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                <div class="col-md-4">
+                                        <div class="form-group">
+{#                                            <h1>{{ myDate|date:'Y-m-d H:i' }}</h1>#}
+{#                                            <input type="datetime-local" class="form-control" name="bdaytime" name="Time">#}
+{#                                            <input type="text" class="form-control" placeholder="Time" name="Time" style="margin-left: 100%; margin-top: 3%">#}
+                                           <input id="input" name="Time" width="300" style="float: left; margin-left: 335px; margin-top: 3%; margin-bottom: 5%"/>
+                                                        <script>
+                                                            $('#input').datetimepicker({
+                                                                footer: true,
+                                                                modal: true
+                                                            });
+                                                        </script>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Bus" name="busno" style="margin-left: 100%; margin-top: 3%">
+                                        </div>
                                     </div>
 
-                                    <div class="to col-md-5">
-                                        <label class="tolabel" style="margin-left:40%;">
-                                            To City
-                                        </label>
-                                        <select style="margin-left:10%;">
-                                            <option value="" class="" selected="selected">--Select Arrival--</option>
-                                            <option label="FAISALABAD" value="number:16">FAISALABAD</option>
-                                            <option label="RAWALPINDI" value="number:22" selected="selected">RAWALPINDI</option>
-                                            <option label="SARGODHA" value="number:21">SARGODHA</option>
-                                            <option disabled="" label="----------------------" value="number:0">----------------------</option>
-                                        </select>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Price" name="price" style="margin-left: 100%; margin-top: 3%">
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- <div class="buttonroute tab-pane">
-
-                                    <input placeholder="Station" type="text">
-                                    <button class="btn btn-primary">Add Station</button>
-                                    <br>
-                                    <input placeholder="DeleteStation" type="text">
-                                    <button class="btn btn-primary">Delete Station</button>
-                                </div> -->\
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-{#                                                <input type="text" class="form-control" placeholder="Username" name="username">#}
-                                                <input type="text" class="form-control" placeholder="Bus" name="busno" style="margin-left: 100%; margin-top: 3%">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <h1>{{ myDate|date:'Y-m-d H:i' }}</h1>
-                                                <input type="datetime-local" class="form-control" name="bdaytime" name="Time" >
-                                                <input type="text" class="form-control" placeholder="Time" name="Time" style="margin-left: 100%; margin-top: 3%">
-                                            </div>
-                                        </div>
-{#                                        <div class="col-md-4">#}
-{#                                            <div class="form-group">#}
-{#                                                <input type="text" class="form-control" placeholder="seats" name="seats" style="margin-left: 100%; margin-top: 3%">#}
-{#                                            </div>#}
-{#                                        </div>#}
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Price" name="price" style="margin-left: 100%; margin-top: 3%">
-                                            </div>
-                                        </div>
-
                                     <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right">Update Profile</button>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-{% endblock %}
 
 </body>
+
 </html>
