@@ -33,6 +33,7 @@
 {#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
 {#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
     <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
+
 </head>
 <body>
 	<!-- main -->
@@ -52,23 +53,30 @@
 				<form action="/companyregister">
                 {%  csrf_token %}
             <label class="form-group" for="adminfirstname">Admin First Name: </label>
-            <input class="form-control" type="text" name="adminfirstname"><br>
+            <input class="form-control" type="text" name="adminfirstname" required pattern="[A-Z,a-z]+"><br>
 
             <label class="form-group" for="adminlastname">Admin Last Name: </label>
-            <input class="form-control" type="text" name="adminlastname"><br>
+            <input class="form-control" type="text" name="adminlastname" required pattern="[A-Z,a-z]+"><br>
 
             <label class="form-group" for="companyname">Company Name: </label>
-            <input class="form-control" type="text" name="companyname"><br>
+            <input class="form-control" type="text" name="companyname" required pattern="[A-Z,a-z]+"><br>
 
             <label class="form-group" for="companyemail">Email: </label>
-            <input class="form-control" type="text" name="companyemail"><br>
+            <input class="form-control" type="email" id="mail" name="mail"><br>
 
             <label class="form-group" for="companypassword">Password: </label>
-            <input class="form-control" type="text" name="companypassword"><br>
+            <input class="form-control" type="password" id="companypassword" name="companypassword" required pattern="[A-Z,a-z,0-9]+"><br>
 
             <label class="form-group" for="companyconfirmpassword">Confirm Password: </label>
-            <input class="form-control" type="text" name="companyconfirmpassword"><br>
-
+            <input class="form-control" type="password" id="companyconfirmpassword" name="companyconfirmpassword" required pattern="[A-Z,0-9,a-z]+"><br>
+    {% if messages %}
+        {% for message in messages %}
+{#                        {% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}#}
+            <div class="alert alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}" role="alert">
+            {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
             <input class="btn btn-success" type="submit" value="Create">
 
 
@@ -156,4 +164,23 @@
 {#			</div>#}
 {#		</div>#}
 </body>
+    <script>
+        var email = document.getElementById("mail");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I expect an e-mail, darling!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+    </script>
+<script>
+    $('#companypassword, #companyconfirmpassword').on('keyup', function () {
+  if ($('#companypassword').val() == $('#companyconfirmpassword').val()) {
+    $('#message').html('Matching').css('color', 'green');
+  } else
+    $('#message').html('Not Matching').css('color', 'red');
+});
+</script>
 </html>

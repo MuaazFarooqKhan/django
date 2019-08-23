@@ -96,7 +96,7 @@
                     </li>
                     <li class="nav-item">
                         <h3 style="margin-right: 32px">
-                            <a href="/addthings/">Add Things</a>
+                            <a href="/calladdthings/">Add Things</a>
                         </h3>
                     </li>
                     <li class="nav-item">
@@ -139,12 +139,12 @@
                                 <div class="col-md-7">
                                     <div class="form-group">
                                         <label style="margin-left: 20%">Bus No.</label>
-                                        <input type="text" class="form-control" placeholder="BusNo" name="seats" style="margin-left: 30%">
+                                        <input type="text" class="form-control" placeholder="BusNo" name="seats" style="margin-left: 30%" required pattern="[0-9]+">
                                     </div>
                                     <div class="form-group">
                                         <label style="margin-left: 20%">Bus Plate No.</label>
 
-                                        <input type="text" class="form-control" placeholder="BusNo" name="platenumber" style="margin-left: 30%">
+                                        <input type="text" class="form-control" placeholder="BusPlateNo" name="platenumber" style="margin-left: 30%" required pattern="[a-z,A-Z,0-9]+">
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right; margin-bottom: 3%">Add Busses</button>
@@ -192,13 +192,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Station" name="stationname">
+                                            <input type="text" class="form-control" placeholder="Station" name="stationname" required pattern="[A-Z,a-z,\s]+">
                                         </div>
                                         <button type="submit" class="btn btn-info btn-fill pull-right">Add Station</button>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" formControlName='deletestation' placeholder="Delete Station">
+                                            <input type="text" class="form-control" formControlName='deletestation' placeholder="Delete Station" pattern="[A-Z,a-z]+">
                                         </div>
                                         <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right">Delete Station</button>
                                     </div>
@@ -226,10 +226,10 @@
                                             <label class="fromlabel" style="margin-left:20%; float: left">
                                                 From City
                                             </label>
-                                            <select style="margin-left:50%;">
+                                            <select id="inputState" name = "arrive" style="margin-left:50%;" >
                                                 <option value="" class="" selected="selected">--Select Departure--</option>
                                             {% for station in mystations %}
-                                            <option value=''>{{ station}}</option>
+                                            <option value='{{ station.id }}'>{{ station.stationname}}</option>
                                                 {% endfor %}
                                             </select>
                                         </div>
@@ -238,10 +238,10 @@
                                             <label class="tolabel" style="margin-left:40%; float: left">
                                                 To City
                                             </label>
-                                            <select style="margin-left:60%;">
-                                                <option value="" class="" selected="selected">--Select Departure--</option>
+                                            <select  id="inputState"  name = "dep"  style="margin-left:60%;">
+                                                <option value='' class="" selected="selected">--Select Departure--</option>
                                             {% for station in mystations %}
-                                            <option value=''>{{ station}}</option>
+                                            <option value='{{ station.id }}'>{{ station.stationname}}</option>
                                                 {% endfor %}
                                             </select>
                                         </div>
@@ -261,9 +261,16 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Bus" name="busno" style="margin-left: 100%; margin-top: 3%">
-                                        </div>
+                                        <label class="tolabel" style="margin-left:40%; float: left">
+                                                Bus No
+                                            </label>
+                                    <select  id="inputState"  name = "busno"  style="margin-left:60%;">
+                                                <option value='' class="" selected="selected">--Select Departure--</option>
+                                            {% for b in b_details %}
+                                            <option value='{{ b.id }}'>{{ b.busno}}</option>
+                                                {% endfor %}
+                                            </select>
+
                                     </div>
 
                                     <div class="col-md-4">

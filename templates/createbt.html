@@ -64,13 +64,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Username</label>
-                                <input type="text" class="form-control" placeholder="Username" name="username">
+                                <input type="text" class="form-control" placeholder="Username" name="username" required pattern="[A-Z,a-z,0-9]+">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" placeholder="Email" name="email">
+                                <input type="email" class="form-control" placeholder="Email" name="email" id="email">
                             </div>
                         </div>
                     </div>
@@ -78,13 +78,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>First Name</label>
-                                <input type="text" class="form-control" placeholder="First Name" name="fnames">
+                                <input type="text" class="form-control" placeholder="First Name" name="fnames" required pattern="[a-z,A-Z]+">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Last Name</label>
-                                <input type="text" class="form-control" placeholder="Last Name" name="lnames">
+                                <input type="text" class="form-control" placeholder="Last Name" name="lnames" required pattern="[a-z,A-Z]+">
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Address</label>
-                                <input type="text" class="form-control" placeholder="Home Address" name="address">
+                                <input type="text" class="form-control" placeholder="Home Address" name="address" required pattern="[[a-zA-Z0–9.!#$%&’*+\/=?^_`{|}~-]+@[a-zA-Z0–9](?:[a-zA-Z0–9-]{0,61} [a-zA-Z0–9])?(?:\.[a-zA-Z0–9](?:[a-zA-Z0–9-]{0,61}[a-zA-Z0–9])?)*$]+">
                             </div>
                         </div>
                     </div>
@@ -102,13 +102,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>City</label>
-                                <input type="text" class="form-control" placeholder="City" name="city">
+                                <input type="text" class="form-control" placeholder="City" name="city" required pattern="[a-z,A-Z]+">
                             </div>
                         </div>
                         <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input type="text" class="form-control" placeholder="Password" name="passwords">
+                                    <input type="text" class="form-control" placeholder="Password" name="passwords" required pattern="[a-z,A-Z,0-9]+">
                                 </div>
                             </div>
                         <!-- <div class="col-md-6">
@@ -133,4 +133,15 @@
 </div>
 {% endblock %}
 </body>
+    <script>
+        var email = document.getElementById("email");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I expect an e-mail, darling!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+    </script>
 </html>

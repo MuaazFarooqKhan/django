@@ -109,8 +109,8 @@
             </div>
         </div>
     </nav>
-    <div class="col-md-11" style="padding-left: 2%">
-        <div class="card" style="margin-left: 10%">
+    <div class="col-md-12" style="padding-left: 0%">
+        <div class="card" style="margin-left: 2%">
             <div>
                 <h3 style="padding-left: 10%; margin-top: 1%">Welcome to the Customer Ticket Form      :
                 <script> document.write(new Date().toDateString()); </script>
@@ -127,43 +127,78 @@
                                                         <!-- <i class="fab fa-youtube text-danger" style="font-size: 20px" ></i>-->
                                                         <!-- <i class="fab fa-youtube text-danger" style="font-size: 20px" ></i>-->
                                                     </div>
+
                                                     <div>
-                                                        <div>
-                                                            <label class="control-label" style="margin-top:3%; padding-left:10%; float: left; color: black">
-                                                                From City:-
-                                                            </label>
-                                                            <div class="from" style="margin-top:22px; padding-left:5%; float: left">
-                                                                <select>
-                                                                    <option value="" class="" selected="selected">--Select Departure--</option>
-                                                                        {% for station in stations %}
-                                                                            <option value=''>{{ station}}</option>
-                                                                        {% endfor %}
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <label class="control-label" style="color: black; margin-top:3%; margin-left:15%; float: left;">
-                                                                To City:-
-                                                            </label>
-                                                            <div class="to" style="margin-top:22px; padding-left:5%; float: left">
-                                                                <select>
-                                                                       <option value="" class="" selected="selected">--Select Departure--</option>
-                                                                        {% for station in stations %}
-                                                                            <option value=''>{{ station}}</option>
-                                                                        {% endfor %}
-                                                                </select>
-                                                            </div>
-                                                        </div>
+{#                                                        <div style="margin-top: 1%; border-radius: 30px;   border: 50px solid #F5F5DC;">#}
+{#                                                            <label class="control-label" style="padding-left:0%; float: left; color: black">#}
+{#                                                                From City:-#}
+{#                                                            </label>#}
+{#                                                            <div class="from" style="padding-left:5%; float: left;margin-top: 2px">#}
+{#                                                                <select>#}
+{#                                                                    <option value="" class="" selected="selected">--Select Departure--</option>#}
+{#                                                                        {% for station in stations %}#}
+{#                                                                            <option value="to_station">{{ station.id}} {{ station }}</option>#}
+{#                                                                        {% endfor %}#}
+{#                                                                </select>#}
+{#                                                            </div>#}
+{##}
+{#                                                            <label class="control-label" style="color: black; margin-top:0%; margin-left:5%; float: left;">#}
+{#                                                                To City:-#}
+{#                                                            </label>#}
+{#                                                            <div class="to" style="margin-top:2px; padding-left:5%; float: left">#}
+{#                                                                <select>#}
+{#                                                                       <option value="" class="" selected="selected">--Select Departure--</option>#}
+{#                                                                        {% for station in stations %}#}
+{#                                                                            <option value='from_station'>{{ station.id}}</option>#}
+{#                                                                        {% endfor %}#}
+{#                                                                </select>#}
+{#                                                            </div>#}
+{#                                                        <input id="input" width="150" style="float: right; margin-right: -550%; margin-top: -3%;"/>#}
+{#                                                        <script>#}
+{#                                                            $('#input').datetimepicker({#}
+{#                                                                footer: true,#}
+{#                                                                modal: true#}
+{#                                                            });#}
+{#                                                        </script>#}
+{#                                                            <a class="btn btn-primary" href="/root_selection/" style="margin-top: -6%; margin-right: 4%; margin-left: 0%; float: right">Search</a>#}
+{##}
+{#                                                        </div>#}
+                                                        <form class="col-md-12 " action= "/root_selectionn" >
+{#            {%  csrf_token %}#}
+  <div class="row">
+    <div class="form-group offset-md-1 col-md-4" >
+          <label for="inputState">Select Home Team</label>
+          <select id="inputState" name = "TeamComp1" class="form-control">
+            {% for o in stations %}
+                  <option value="{{ o.id}}">{{ o.stationname }}</option>
+                  {% endfor %}
+          </select>
+        </div>
+          <div class="form-group offset-md-2 col-md-4">
+          <label for="inputState">Select Away Team</label>
+          <select id="inputState"  name = "TeamComp2" class="form-control">
+            {% for o in stations %}
+                  <option value="{{ o.id}}">{{ o.stationname }}</option>
+                  {% endfor %}
+          </select>
+        </div>
+            </div>
+    <br> <br>
+
+    <input  class="offset-sm-4 col-md-4 btn bt-lg btn-primary " type="submit" value="Search">
+
+
+</form>
+
+
+
+
+
+
                                                     <div style="margin-top: 1%">
 
                                                     </div>
-                                                        <input id="input" width="280" style="float: left; margin-left: 35%; margin-top: 5%"/>
-                                                        <script>
-                                                            $('#input').datetimepicker({
-                                                                footer: true,
-                                                                modal: true
-                                                            });
-                                                        </script>
+
 {#                                                        <p style="float: left; padding-left: 5%; padding-top: 2%">Date:#}
 {#                                                            <input type="text" id="datepicker" size="30">#}
 {#                                                        </p>#}
@@ -175,31 +210,33 @@
 {#                                                                <option value="DD, d MM, yy">Full - DD, d MM, yy</option>#}
 {#                                                            </select>#}
 {#                                                        </p>#}
-                                                        <a class="btn btn-primary" href="/add_book/" style="margin-top: 2%; margin-right: 4%">Search</a>
-                                                        <div class="container" style="padding-top: 0%">
+
+                                                        <div class="container" style="margin-top: -2%">
                                                             <br>
                                                             <table class="table table-info">
                                                                 <thead>
                                                                     <tr>
                                                                         <th>To</th>
                                                                         <th>From</th>
+
+                                                                        <th>Bus no</th>
                                                                         <th>Price</th>
-                                                                        <th>Seats</th>
                                                                         <th>Time And Date</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                    {% for book in stations %}
+                                                                    {% for r in all_routes %}
 
                                                                     <tr>
-                                                                        <td>{{ book.stationname }}</td>
-                                                                        <td>{{ book.stationname }}</td>
-                                                                        <td>{{ book.author }}</td>
-                                                                    </tr>
-                                                                        <tr>
-                                                                        <td>{{ book.stationname }}</td>
-                                                                        <td>{{ book.stationname }}</td>
-                                                                        <td>{{ book.author }}</td>
+                                                                    <td>{{ r.to_route }}</td>
+                                                                    <td>{{ r.from_route }}</td>
+                                                                        <td>{{ r.bus_no }}</td>
+                                                                        <td>{{ r.price }}</td>
+                                                                        <td>{{ r.Time }}</td>
+                                                                    <td>
+                                                                        <a class="btn btn-info" href="/bookticket/{{ r.id }}">Book</a>
+                                                                        <a class="btn btn-danger" href="/delete/{{ r.id }}">Buy</a>
+                                                                    </td>
                                                                     </tr>
 
                                                                     {% endfor %}

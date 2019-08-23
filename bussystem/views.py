@@ -6,7 +6,7 @@ from django.contrib import messages
 from django.shortcuts import render, redirect, HttpResponse
 from django.db import IntegrityError
 # Create your views here.
-from bussystem.models import Customer, Bt, Company, Station, routee, BusDetail
+from bussystem.models import *
 from fontawesome_5.fields import IconField
 from datetime import datetime
 
@@ -26,7 +26,7 @@ def create(request):
     book_details = Customer(firstname=firstname, lastname=lastname, email=email, password=password,
                             confirmpassword=confirmpassword)
     book_details.save()
-    return redirect('/')
+    return render(request, 'userticket.html')
 
 
 def authentication(request):
@@ -56,15 +56,15 @@ def authentication(request):
     if (customers > 0):
         request.session['email'] = email
         # request.session['password']=Cust_password
-        return render(request, 'userticket.html')
+        return redirect('/userticket')
     elif (bt > 0):
         request.session['email'] = email
         # request.session['password']=Cust_password
-        return render(request, 'BtTicket.html')
+        return redirect('/btticket')
     elif (com > 0):
         request.session['email'] = companyemail
         # request.session['password']=Cust_password
-        return render(request, 'adminprofile.html')
+        return redirect('/adminprofile')
     else:
         messages.error(request, 'Email Or Password Doesnot match')
         return render(request, 'login.html')
@@ -85,6 +85,7 @@ def signout(request):
 
 
 def home(request):
+
     return render(request, 'home.html')
 
 
@@ -101,15 +102,27 @@ def companyregister(request):
     adminfirstname = request.GET.get('adminfirstname')
     adminlastname = request.GET.get('adminlastname')
     companyname = request.GET.get('companyname')
-    companyemail = request.GET.get('companyemail')
+    companyemail = request.GET.get('mail')
     companypassword = request.GET.get('companypassword')
     companyconfirmpassword = request.GET.get('companyconfirmpassword')
-    company_details = Company(adminfirstname=adminfirstname, adminlastname=adminlastname, companyname=companyname,
-                              companyemail=companyemail, companypassword=companypassword,
-                              companyconfirmpassword=companyconfirmpassword)
-    company_details.save()
-    # messages.success(request, 'You are  Already Loged In')
-    return render(request, 'companyregister.html')
+
+    if(companyconfirmpassword == companypassword):
+
+        company_details = Company(adminfirstname=adminfirstname, adminlastname=adminlastname, companyname=companyname,
+                                  companyemail=companyemail, companypassword=companypassword,
+                                  companyconfirmpassword=companyconfirmpassword)
+        company_details.save()
+
+        if request.session.get('email'):
+            del request.session['email']
+
+        request.session['email'] = companyemail
+        # messages.success(request, 'You are  Already Loged In')
+        return redirect('/adminprofile')
+
+    else:
+        messages.success(request, 'Passwords didnt match')
+        return redirect( '/callcompanyregister')
 
 def callcompanyregister(request):
     # print(request.POST)
@@ -117,7 +130,7 @@ def callcompanyregister(request):
 
 
 def btticket(request):
-    return render(request, 'btticket.html')
+    return render(request, 'BtTicket.html')
 
 
 def btcancel(request):
@@ -130,8 +143,10 @@ def usercancel(request):
 
 def userticket(request):
     stations = Station.objects.all()
+    x=43;
     context = {
-        'stations': stations
+        'stations': stations,
+        'x':x
     }
     return render(request, 'userticket.html', context)
 
@@ -192,6 +207,8 @@ def delete(request, id):
 
 
 
+
+
 def adminprofile(request, pk=None):
     email = request.session['email']
     if request.session.get('email'):
@@ -230,6 +247,28 @@ def edit(request):
     # books.title = request.GET['title']
     return redirect('/')
 
+def root_selectionn(request):
+    # stations = Station.objects.filter(companyid=Company.objects.get(id=2))
+
+    stations = Station.objects.all()
+    s1 = request.GET['TeamComp1']
+    s2 = request.GET['TeamComp2']
+
+    all_routes = routee.objects.filter(to_route=Station.objects.get(id=s1),from_route=Station.objects.get(id=s2))
+
+    if(all_routes.count()==0):
+        print('No route found')
+    else:
+        for i in all_routes:
+            print(i.bus_no)
+
+    context = {
+        'all_routes': all_routes,
+        'stations':stations,
+    }
+
+    return render(request, 'userticket.html',context)
+
 
 def addthings(request):
     busno = request.GET.get('seats')
@@ -255,13 +294,15 @@ def calladdthings(request):
     email = request.session['email']
     if request.session.get('email'):
         com_id = Company.objects.get(companyemail=email).id
+        x=Company.objects.get(id=com_id)
         mystations=Station.objects.filter(companyid=com_id)
         rou=routee.objects.filter()
-
+        b_details=BusDetail.objects.filter(bsid=x)
 
         context = {
             'mystations': mystations,
             'rou':rou,
+            'b_details':b_details,
         }
     return render(request, 'addthings.html',context)
 
@@ -271,14 +312,16 @@ def routes(request):
     busno= request.GET.get('busno')
     Time = request.GET.get('Time')
     price = request.GET.get('price')
+    dep = request.GET.get('dep')
+    arrive = request.GET.get('arrive')
     email = request.session['email']
+    temp=BusDetail.objects.get(id=busno).busno
 
     if request.session.get('email'):
         newbus = Company.objects.get(companyemail=email)
 
 
-
-    routes_details= routee(com=newbus, busno=busno, Time=Time, price= price)
+    routes_details= routee(company_name=newbus,bus_details=BusDetail.objects.get(id=busno) ,bus_no=temp, Time=Time, price= price, to_route= Station.objects.get(id=dep), from_route=Station.objects.get(id=arrive))
     routes_details.save()
     return render(request, 'AddThings.html')
 
@@ -287,5 +330,33 @@ def adminsearch(request):
     return render(request, 'adminsearch.html')
 
 
-def bookticket(request):
-    return render(request, 'bookticket.html')
+def bookticket(request,id):
+    # bt = Bt.objects.get(pk=id)
+    # bt.delete()
+    context = {
+        'id':id,
+    }
+    return render(request, 'bookticket.html',context)
+
+# def call_ticket_done(request,id):
+#     return redirect('/ticket_done')
+
+def ticket_done(request):
+    # bt = Bt.objects.get(pk=id)
+    # bt.delete()
+    username= request.GET.get('username')
+    phone = request.GET.get('phone')
+    cnic = request.GET.get('cnic')
+    email= request.GET.get('email')
+    amount = request.GET.get('amount')
+    seatsno = request.GET.get('seatsno')
+    noofseats = request.GET.getlist('checks[]')
+    noofseats=str(noofseats)
+    print(noofseats)
+    print(username)
+    print('Temppppp')
+    rou=routee.objects.get(pk=1)
+    booking_details= bootticket(route_forign=rou,username=username, phone=phone, cnic=cnic, email= email ,amount=amount, noofseats=noofseats, seatno=seatsno)
+    booking_details.save()
+    # return render(request, 'bookticket.html')
+    return redirect('/')

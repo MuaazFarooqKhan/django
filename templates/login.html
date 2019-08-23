@@ -66,7 +66,7 @@
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" name='email' placeholder="email">
+						<input type="text" name='email' placeholder="email" id="email">
 
 					</div>
 					<div class="input-group form-group">
@@ -96,4 +96,15 @@
 	</div>
 </div>
 </body>
+    <script>
+        var email = document.getElementById("email");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I expect an e-mail, darling!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+    </script>
 </html>

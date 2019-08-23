@@ -33,6 +33,7 @@
 {#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
 {#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
     <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
+
 </head>
 <body>
 	<!-- main -->
@@ -43,19 +44,19 @@
 				<form action="/create">
                 {%  csrf_token %}
             <label class="form-group" for="firstname">First name </label>
-            <input class="form-control" type="text" name="firstname"><br>
+            <input class="form-control" type="text" name="firstname" required pattern="[A-Z,a-z]+"><br>
 
             <label class="form-group" for="lastname">Last name </label>
-            <input class="form-control" type="text" name="lastname"><br>
+            <input class="form-control" type="text" name="lastname" required pattern="[A-Z,a-z]+"><br>
 
-            <label class="form-group" for="email">Emal </label>
-            <input class="form-control" type="text" name="email"><br>
+            <label class="form-group" for="email" >Email </label>
+            <input class="form-control" type="email"id="email" name="email"><br>
 
             <label class="form-group" for="password">Password: </label>
-            <input class="form-control" type="text" name="password"><br>
+            <input class="form-control" type="password" name="password" required pattern="[A-Z,a-z,0-9]+"><br>
 
             <label class="form-group" for="confirmpassword">Confirm Password: </label>
-            <input class="form-control" type="text" name="confirmpassword"><br>
+            <input class="form-control" type="password" name="confirmpassword" required pattern="[A-Z,a-z,0-9]+"><br>
 
             <input class="btn btn-success" type="submit" value="Create">
 
@@ -144,4 +145,15 @@
 {#			</div>#}
 {#		</div>#}
 </body>
+    <script>
+        var email = document.getElementById("email");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I expect an e-mail, darling!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+    </script>
 </html>

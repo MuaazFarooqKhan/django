@@ -9,6 +9,7 @@ admin.site.register(Company)
 admin.site.register(Station)
 admin.site.register(routee)
 admin.site.register(BusDetail)
+admin.site.register(bootticket)
 admin.site.register(xt)
 
 

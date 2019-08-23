@@ -23,10 +23,12 @@ urlpatterns = [
     path('calladdthings/', views.calladdthings, name='calladdthings'),
     path('routes/', views.routes, name='routes'),
     path('station/', views.station, name='station'),
+    path('root_selectionn/', views.root_selectionn, name='root_selectionn'),
     path('adminsearch/', views.adminsearch, name='adminsearch'),
     path('signout/', views.signout, name='signout'),
     path('update/', views.update, name='update'),
-    path('bookticket/', views.bookticket, name='bookticket'),
+    path('ticket_done/', views.ticket_done, name='ticket_done'),
+    path('bookticket/<id>/', views.bookticket, name='bookticket'),
     path('edit/<id>/', views.edit, name='edit'),
 
 ]

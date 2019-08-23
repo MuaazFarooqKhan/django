@@ -4,6 +4,8 @@ from django.db import models
 # from django.contrib.auth.base_user import AbstractBaseUser
 # from django.contrib.auth.base_user import BaseUserManager
 # from django.contrib.auth.models import PermissionsMixin
+from django.contrib.postgres.fields import ArrayField
+
 
 # Create your models here.
 class Company(models.Model):
@@ -63,8 +65,8 @@ class Station(models.Model):
         return self.stationname
 
 class BusDetail(models.Model):
-    bsid = models.ForeignKey(Company, on_delete=models.CASCADE)
-    busno = models.CharField(max_length=150, null=False)
+    bsid = models.ForeignKey(Company, on_delete=models.CASCADE,null=False)
+    busno = models.CharField(max_length=150)
     busplatenumber = models.CharField(max_length=150, null=False)
     # Type = models.CharField(max_length=150, null=True)
 
@@ -84,9 +86,27 @@ class routee(models.Model):
     def __str__(self):
         if self.bus_no == None:
             return "ERROR-Busno IS NULL"
-        return self.bus_no
+        q=""
+        q=self.to_route.stationname+"_to_"+self.from_route.stationname+"_via_"+self.company_name.companyname
+        return q
 
 
 class xt(models.Model):
     x_time=models.DateTimeField(null=True)
     x_name=models.CharField(max_length=150,null=True)
+
+
+class bootticket(models.Model):
+    route_forign = models.ForeignKey(routee, on_delete=models.CASCADE, related_name='route_for', null=False, blank=False)
+    username = models.CharField(max_length=150, null=True)
+    phone = models.IntegerField(null=True)
+    cnic = models.IntegerField(null=True)
+    email = models.EmailField(null=True)
+    amount = models.FloatField(null=True)
+    seatno = models.IntegerField(null=True)
+    noofseats = models.CharField(max_length=150, null=True)
+    # seat = models.CharField(null=True)
+
+    def __str__(self):
+        return self.username
+
