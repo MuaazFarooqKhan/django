@@ -9,6 +9,7 @@ font-family: 'Numans', sans-serif;
 background-image: linear-gradient(#a1ffce, #faffd1);}
 .services{
 background-image: linear-gradient(#a1ffce, #faffd1);}
+
 .id{
    margin-left: 650px;
 }
@@ -23,4 +24,19 @@ background-image: linear-gradient(#a1ffce, #faffd1);}
 }
 .text-spacing-sm {
     letter-spacing: 0.02em;
+}
+
+.bttttn
+{
+    width: 8%;
+    height: 40px;
+    margin:  4px;
+    padding: 7px;
+}
+.btttt
+{
+    width: 10%;
+    height: 40px;
+    margin-top: 2%;
+    padding: 7px;
 }

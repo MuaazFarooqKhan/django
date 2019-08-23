@@ -1,0 +1,39 @@
+{% extends 'adminheader.html' %}
+{% load static from staticfiles  %}
+{% load bootstrap3 %}
+{% load fontawesome %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="small_div">
+
+<div class="container">
+
+    <form action="/update/{{ up.id }}">
+
+        {% csrf_token %}
+
+        <label class="form-group" for="title">Title: </label>
+        <input class="form-control" type="text" name="title" value="{{ up.adminfirstname }}" placeholder="{{ up.adminfirstname }}">
+
+{#        <label class="form-group" for="price">Price: </label>#}
+{#        <input class="form-control" type="text" name="price" value="{{ books.price }}" placeholder="{{ books.price }}">#}
+{##}
+{#        <label class="form-group" for="author">Author: </label>#}
+{#        <input class="form-control" type="text" name="author" value="{{ books.author }}" placeholder="{{ books.author }}">#}
+{#        <br>#}
+
+        <input class="btn btn-primary" type="submit" value="Update">
+
+    </form>
+
+
+</div>
+</div>
+</body>
+</html>

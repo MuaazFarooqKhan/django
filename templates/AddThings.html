@@ -228,8 +228,8 @@
                                             </label>
                                             <select style="margin-left:50%;">
                                                 <option value="" class="" selected="selected">--Select Departure--</option>
-                                            {% for r in rou %}
-                                            <option value=''>{{ r }}</option>
+                                            {% for station in mystations %}
+                                            <option value=''>{{ station}}</option>
                                                 {% endfor %}
                                             </select>
                                         </div>
@@ -240,8 +240,8 @@
                                             </label>
                                             <select style="margin-left:60%;">
                                                 <option value="" class="" selected="selected">--Select Departure--</option>
-                                            {% for r in rou %}
-                                            <option value=''>{{ r}}</option>
+                                            {% for station in mystations %}
+                                            <option value=''>{{ station}}</option>
                                                 {% endfor %}
                                             </select>
                                         </div>
