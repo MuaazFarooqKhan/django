@@ -4,7 +4,7 @@ from django.db import models
 # from django.contrib.auth.base_user import AbstractBaseUser
 # from django.contrib.auth.base_user import BaseUserManager
 # from django.contrib.auth.models import PermissionsMixin
-from django.contrib.postgres.fields import ArrayField
+# from django.contrib.postgres.fields import ArrayField
 
 
 # Create your models here.
@@ -32,7 +32,7 @@ class Customer(models.Model):
     cus_id = models.AutoField(primary_key=True)
     firstname = models.CharField(max_length=50)
     lastname = models.CharField(max_length=100)
-    email = models.CharField(max_length=100)
+    email = models.CharField(max_length=100, unique=True)
     password = models.CharField(max_length=150)
     confirmpassword = models.CharField(max_length=150)
 
@@ -82,6 +82,9 @@ class routee(models.Model):
     bus_no = models.CharField(max_length=150, null=False)
     Time = models.CharField(max_length=150, null=True)
     price = models.FloatField(max_length=8, null=True)
+    booked_seats = models.CharField(max_length=3000, null=True)
+    remaining_seats = models.IntegerField(null=True)
+
 
     def __str__(self):
         if self.bus_no == None:
@@ -104,7 +107,7 @@ class bootticket(models.Model):
     email = models.EmailField(null=True)
     amount = models.FloatField(null=True)
     seatno = models.IntegerField(null=True)
-    noofseats = models.CharField(max_length=150, null=True)
+    noofseats = models.CharField(max_length=1500, null=True)
     # seat = models.CharField(null=True)
 
     def __str__(self):

@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background-size: cover;
 background-repeat: no-repeat;
 height: auto;
 font-family: 'Numans', sans-serif;
 }
-
+.btton
+{
+    width: 6%;
+    height: 40px;
+    margin:  2px;
+    padding: 7px;
+}
 .container{
 height: auto;
 width: 100%;
@@ -16,7 +24,7 @@ align-content: center;
 
 .card{
 height: 380px;
-margin-top: 11%;
+margin-top: 5%;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(0,0,0,0.5) !important;

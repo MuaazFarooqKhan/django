@@ -116,7 +116,7 @@
                 <form action="/signout">
                     {%  csrf_token %}
                     <div class="form-group">
-                        <input type="submit" value="Signout" class="button btn btn-outline-primary btn-block">
+                        <input type="submit" value="Signout" class="button btn btn-outline-primary btn-block" style="border: 1px solid #1D62F0;">
                     </div>
                 </form>
 
@@ -128,21 +128,21 @@
     </div>
 </nav>
 <div class="container">
-        <div class="row">
-            <div class="col-md-6" style="margin-left: 25%; margin-top: 5%">
-                <div class="card">
+        <div class="row" style="color: transparent">
+            <div class="col-md-6" style="margin-left: 25%; margin-top: 5%;color: transparent">
+                <div class="card" style="background-color: transparent">
                     <div class="header">
                         <h4 class="title">Busses</h4>
-                        <hr>
+                    <hr style="border-color: black">
                         <div class="content">
                             <form action="/addthings">
                                 <div class="col-md-7">
                                     <div class="form-group">
-                                        <label style="margin-left: 20%">Bus No.</label>
+                                        <label style="margin-left: 20%; color: black">Bus No.</label>
                                         <input type="text" class="form-control" placeholder="BusNo" name="seats" style="margin-left: 30%" required pattern="[0-9]+">
                                     </div>
                                     <div class="form-group">
-                                        <label style="margin-left: 20%">Bus Plate No.</label>
+                                        <label style="margin-left: 20%; color: black">Bus Plate No.</label>
 
                                         <input type="text" class="form-control" placeholder="BusPlateNo" name="platenumber" style="margin-left: 30%" required pattern="[a-z,A-Z,0-9]+">
                                     </div>
@@ -159,16 +159,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="card" style="margin-top:1%; margin-bottom: 7%">
+                <div class="card" style="margin-top:1%; margin-bottom: 7%; background-color: transparent">
                     <div class="header">
                         <h4 class="title">Stations</h4>
+                    <hr style="border-color: black">
                         <div class="content">
                             <form action="/station">
                                 {% csrf_token %}
 
                                 <div class="row">
                                     <div class="from col-md-12">
-                                        <label class="fromlabel" style="margin-left: 35%">
+                                        <label class="fromlabel" style="margin-left: 35%; color: black">
                                             All Stations
                                         </label>
                                         <select style="margin-left: 5%">
@@ -214,7 +215,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-10" style="margin-left: 8%; margin-right: 7%; margin-top: 1%;">
-                    <div class="card">
+                    <div class="card" style="background-color: transparent">
                         <div class="header">
                             <h4 class="title">Routes</h4>
                             <hr>
@@ -223,10 +224,10 @@
                                     {% csrf_token %}
                                     <div class="row">
                                         <div class="from col-md-4">
-                                            <label class="fromlabel" style="margin-left:20%; float: left">
+                                            <label class="fromlabel" style="margin-left:20%; float: left; color: black">
                                                 From City
                                             </label>
-                                            <select id="inputState" name = "arrive" style="margin-left:50%;" >
+                                            <select id="inputState" name = "arrive" style="margin-left:50%; color: black" >
                                                 <option value="" class="" selected="selected">--Select Departure--</option>
                                             {% for station in mystations %}
                                             <option value='{{ station.id }}'>{{ station.stationname}}</option>
@@ -235,7 +236,7 @@
                                         </div>
 
                                         <div class="to col-md-5">
-                                            <label class="tolabel" style="margin-left:40%; float: left">
+                                            <label class="tolabel" style="margin-left:40%; float: left; color: black">
                                                 To City
                                             </label>
                                             <select  id="inputState"  name = "dep"  style="margin-left:60%;">
@@ -251,7 +252,7 @@
 {#                                            <h1>{{ myDate|date:'Y-m-d H:i' }}</h1>#}
 {#                                            <input type="datetime-local" class="form-control" name="bdaytime" name="Time">#}
 {#                                            <input type="text" class="form-control" placeholder="Time" name="Time" style="margin-left: 100%; margin-top: 3%">#}
-                                           <input id="input" name="Time" width="300" style="float: left; margin-left: 335px; margin-top: 3%; margin-bottom: 5%"/>
+                                           <input id="input" name="Time" width="300" placeholder="   Time" style="background-color: white;float: left; margin-left: 335px; margin-top: 3%; margin-bottom: 5%"/>
                                                         <script>
                                                             $('#input').datetimepicker({
                                                                 footer: true,
@@ -261,10 +262,10 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <label class="tolabel" style="margin-left:40%; float: left">
+                                        <label class="tolabel" style="margin-left:90%; float: left; color: black;">
                                                 Bus No
                                             </label>
-                                    <select  id="inputState"  name = "busno"  style="margin-left:60%;">
+                                    <select  id="inputState"  name = "busno"  style="margin-left:100%; margin-top: -100px">
                                                 <option value='' class="" selected="selected">--Select Departure--</option>
                                             {% for b in b_details %}
                                             <option value='{{ b.id }}'>{{ b.busno}}</option>

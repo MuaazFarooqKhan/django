@@ -25,21 +25,77 @@
 
     <!--  Light Bootstrap Table core CSS    -->
     <link href="{% static 'css/light-bootstrap-dashboard.css' %}" rel="stylesheet"/>
-
-
-    <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="{% static 'css/demo.css' %}" rel="stylesheet" />
-
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style1.css' %}">
 
     <!--     Fonts and icons     -->
 {#    <link href="{% static 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'%}" rel="stylesheet">#}
 {#    <link href='{% static 'http://fonts.googleapis.com/css?family=Roboto:400,700,300'%} rel="stylesheet" type="text/css ">#}
     <link href="{% static 'css/pe-icon-7-stroke.css' %}" rel="stylesheet" />
 
-        {% fontawesome_5_static %}
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
 
+    <!--apni css-->
+
+    <link href="{% static 'css/adminprofile.css' %}" rel="stylesheet" />
 </head>
 <body>
+	<!-- main -->
+
+    <marquee style="float: left" align="{mid}" direction="left" scrollamount="10" behavior="altenate" scrolldelay="50" loop="" bgcolor="white" width="50%" height="50px" onmouseover="this.stop()" onmouseout="this.start()" class="firstmarquee">
+        <p class="navtext">
+            You are the admin of the company. You have the authority of each of every thing like add new bt, new station or can add new busses.
+        </p>
+    </marquee>
+
+    <marquee style="float: left" direction="up" scrollamount="" behavior="altenate" scrolldelay="50" loop="" bgcolor="white" width="50%" height="50px" onmouseover="this.stop()" onmouseout="this.start()" class="secmarquee">
+        <img src="{% static 'images/1.jpg' %}" alt="">
+
+        <img src="{% static 'images/3.png' %}" alt="">
+
+        <img src="{% static 'images/5.png' %}" alt="">
+    </marquee>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="main_nav" aria-controls="main_nav" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse main_nav" id="main_nav">
+                <ul class="nav navbar-nav">
+{#                    <li class="nav-item">#}
+{#                        <h3 style="margin-right: 32px">#}
+{#                            <a href="/useredit/">Edit</a>#}
+{#                        </h3>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <h3 style="margin-right: 32px">#}
+{#                            <a href="/createbt/">Creat Bt</a>#}
+{#                        </h3>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <h3 style="margin-right: 32px">#}
+{#                            <a href="/deletebt/">Delete Bt</a>#}
+{#                        </h3>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <h3 style="margin-right: 32px">#}
+{#                            <a href="/addthings/">Add Things</a>#}
+{#                        </h3>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <h3 style="margin-right: 32px">#}
+{#                            <a href="/adminsearch/">Search</a>#}
+{#                        </h3>#}
+{#                    </li>#}
+                </ul>
+                <span class="mr-auto"></span>
+                <a class="btton btn btn-outline-primary btn-block" href="/">Back </a>
+            </div>
+        </div>
+    </nav>
 <div class="container">
     {% if messages %}
         {% for message in messages %}
@@ -49,8 +105,8 @@
             </div>
         {% endfor %}
     {% endif %}
-	<div class="d-flex justify-content-center h-100">
-		<div class="card">
+	<div class="d-flex justify-content-center">
+		<div class="card" style="margin-bottom: 79px">
 			<div class="card-header">
 				<h3>Sign In</h3>
 				<div class="d-flex justify-content-end social_icon">
@@ -75,11 +131,11 @@
 						</div>
 						<input type="password" name='password' placeholder="password">
 					</div>
-					<div class="row align-items-center remember">
-						<input type="checkbox">Remember Me
-					</div>
+{#					<div class="row align-items-center remember">#}
+{#						<input type="checkbox">Remember Me#}
+{#					</div>#}
 					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn">
+						<input type="submit" value="Login" class="btton btn btn-outline-primary btn-block">
 					</div>
 				</form>
 		</div>

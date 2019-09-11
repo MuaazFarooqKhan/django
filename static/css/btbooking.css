@@ -387,3 +387,11 @@ ol {
         padding-right: 15px;
     }
 }
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+}
+input[type=checkbox]:checked + label {
+    color: #f00;
+    font-style: normal;
+}

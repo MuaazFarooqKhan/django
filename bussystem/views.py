@@ -78,6 +78,7 @@ def signout(request):
         del request.session['email']
         del request.session['password']
         print('logout')
+        return redirect('/signout')
     except:
         pass
     print('LOL')
@@ -85,7 +86,6 @@ def signout(request):
 
 
 def home(request):
-
     return render(request, 'home.html')
 
 
@@ -122,7 +122,7 @@ def companyregister(request):
 
     else:
         messages.success(request, 'Passwords didnt match')
-        return redirect( '/callcompanyregister')
+        return redirect('/callcompanyregister')
 
 def callcompanyregister(request):
     # print(request.POST)
@@ -209,23 +209,25 @@ def delete(request, id):
 
 
 
-def adminprofile(request, pk=None):
-    email = request.session['email']
-    if request.session.get('email'):
-        newbusno = Company.objects.get(companyemail=email)
-        com_username=newbusno.adminfirstname
-        com_userlastname=newbusno.adminlastname
-        com_name=newbusno.companyname
-        companyemail=newbusno.companyemail
-        context = {
-            'com_name':com_name,
-            'com_username':com_username,
-            'com_userlastname':com_userlastname,
-            'companyemail':companyemail,
-        }
+def adminprofile(request):
+    try:
+        email = request.session['email']
+        if request.session.get('email'):
+            newbusno = Company.objects.get(companyemail=email)
+            com_username=newbusno.adminfirstname
+            com_userlastname=newbusno.adminlastname
+            com_name=newbusno.companyname
+            companyemail=newbusno.companyemail
+            context = {
+                'com_name':com_name,
+                'com_username':com_username,
+                'com_userlastname':com_userlastname,
+                'companyemail':companyemail,
+            }
+        return render(request, 'adminprofile.html', context)
 
-    return render(request, 'adminprofile.html', context)
-
+    except:
+        return HttpResponse("There were some problems encountered")
 
 def performance(request):
     return render(request, 'performance.html')
@@ -291,21 +293,36 @@ def addthings(request):
 
 
 def calladdthings(request):
-    email = request.session['email']
-    if request.session.get('email'):
-        com_id = Company.objects.get(companyemail=email).id
-        x=Company.objects.get(id=com_id)
-        mystations=Station.objects.filter(companyid=com_id)
-        rou=routee.objects.filter()
-        b_details=BusDetail.objects.filter(bsid=x)
+    try:
+        email = request.session['email']
+        if request.session.get('email'):
+            com_id = Company.objects.get(companyemail=email).id
+            x=Company.objects.get(id=com_id)
+            mystations=Station.objects.filter(companyid=com_id)
+            rou=routee.objects.filter()
+            b_details=BusDetail.objects.filter(bsid=x)
 
-        context = {
-            'mystations': mystations,
-            'rou':rou,
-            'b_details':b_details,
-        }
-    return render(request, 'addthings.html',context)
+            context = {
+                'mystations': mystations,
+                'rou':rou,
+                'b_details':b_details,
+            }
+            return render(request, 'addthings.html',context)
+        else:
+            return HttpResponse("You need to signin for this page")
 
+    except:
+        return HttpResponse("There were some problems encountered")
+
+# def testArray(request):
+#     try:
+#         ary = ["1A","2B","3C"]
+#         context = {
+#             'ary': ary,
+#         }
+#         return render(request, 'bookticket.html', context)
+#     except:
+#         return HttpResponse("There were some problems encountered")
 
 def routes(request):
     print(request.POST)
@@ -330,20 +347,23 @@ def adminsearch(request):
     return render(request, 'adminsearch.html')
 
 
-def bookticket(request,id):
-    # bt = Bt.objects.get(pk=id)
-    # bt.delete()
+def bookticket(request, id):
+    rou = routee.objects.get(pk=id)
+    ary = rou.booked_seats.split(',')
+    # ary = ["1A", "2B", "3C", "11C","9D", "10A"]
     context = {
         'id':id,
+        'ary': ary
     }
-    return render(request, 'bookticket.html',context)
+    return render(request, 'bookticket.html', context)
 
 # def call_ticket_done(request,id):
 #     return redirect('/ticket_done')
 
-def ticket_done(request):
+def ticket_done(request, id):
     # bt = Bt.objects.get(pk=id)
     # bt.delete()
+    temp_str = ""
     username= request.GET.get('username')
     phone = request.GET.get('phone')
     cnic = request.GET.get('cnic')
@@ -351,12 +371,49 @@ def ticket_done(request):
     amount = request.GET.get('amount')
     seatsno = request.GET.get('seatsno')
     noofseats = request.GET.getlist('checks[]')
-    noofseats=str(noofseats)
+
+    for i in noofseats:
+        temp_str=temp_str+str(i)+","
+
+    temp_str = temp_str[:-1]
+
+    noofseats=str(temp_str)
     print(noofseats)
     print(username)
     print('Temppppp')
-    rou=routee.objects.get(pk=1)
+    rou=routee.objects.get(pk=id)
+    all_seats=rou.booked_seats+','+temp_str
+    rou.booked_seats=all_seats
+    arr = all_seats.split(',')
+    rou.remaining_seats = 45-len(arr)
+    rou.save()
+
+
     booking_details= bootticket(route_forign=rou,username=username, phone=phone, cnic=cnic, email= email ,amount=amount, noofseats=noofseats, seatno=seatsno)
     booking_details.save()
-    # return render(request, 'bookticket.html')
-    return redirect('/')
+    return redirect( '/userticket')
+    # return redirect('/')
+
+
+def useredit(request):
+    email = request.session['email']
+    if request.session.get('email'):
+        cus = Customer.objects.get(email=email)
+        context ={
+            'cus':cus
+        }
+        return render(request, 'useredit.html', context)
+
+
+def user_update(request):
+    email = request.session['email']
+    if request.session.get('email'):
+        cus = Customer.objects.get(email=email)
+        # cus = Company.objects.get(cus_id=com_id)
+
+        cus.firstname = request.GET['title']
+        cus.lastname = request.GET['price']
+        cus.password = request.GET['author']
+        cus.confirmpassword = request.GET['cpass']
+        cus.save()
+        return redirect('/userticket')

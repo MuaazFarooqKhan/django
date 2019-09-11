@@ -72,11 +72,11 @@
             </button>
             <div class="collapse navbar-collapse main_nav" id="main_nav">
                 <ul class="nav navbar-nav">
-{#                    <li class="nav-item">#}
-{#                        <h3 style="margin-right: 32px">#}
-{#                            <a href="/adminprofile/">Admin Panel</a>#}
-{#                        </h3>#}
-{#                    </li>#}
+                    <li class="nav-item">
+                        <h3 style="margin-right: 32px">
+                            <a href="/useredit/{{ cus }}">Edit</a>
+                        </h3>
+                    </li>
 {#                    <li class="nav-item">#}
 {#                        <h3 style="margin-right: 32px">#}
 {#                            <a href="/createbt/">Creat Bt</a>#}
@@ -99,7 +99,7 @@
 {#                    </li>#}
                 </ul>
                 <span class="mr-auto"></span>
-                <a class="bttttn btn btn-outline-primary btn-block" href="/btticket/">Back </a>
+                <a class="bttttn btn btn-outline-primary btn-block" href="/userticket/">Back </a>
                 <form action="/signout">
                     {% csrf_token %}
                     <div class="form-group">
@@ -216,6 +216,7 @@
                                                             <table class="table table-info">
                                                                 <thead>
                                                                     <tr>
+                                                                        <th>Company Name</th>
                                                                         <th>To</th>
                                                                         <th>From</th>
 
@@ -228,6 +229,7 @@
                                                                     {% for r in all_routes %}
 
                                                                     <tr>
+                                                                    <td>{{ r.company_name }}</td>
                                                                     <td>{{ r.to_route }}</td>
                                                                     <td>{{ r.from_route }}</td>
                                                                         <td>{{ r.bus_no }}</td>
@@ -245,6 +247,35 @@
                                                             </table>
                                                         </div>
                                                     </div>
+                                                <hr>
+                                                 <div class="footer">
+                        <div class="container">
+                            <nav class="pull-left">
+                                <ul>
+                                    <li>
+                                        <a style="color: Black; float: left; margin-right: 3%">
+                                    Home
+                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="color: Black; float: left; margin-right: 3%">
+                                    Company
+                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="color: Black; float: left; margin-right: 3%">
+                                    Portfolio
+                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="color: Black">
+                                   Blog
+                                </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                                                 </div>
                                             </div>
                                         </div>

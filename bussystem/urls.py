@@ -27,8 +27,11 @@ urlpatterns = [
     path('adminsearch/', views.adminsearch, name='adminsearch'),
     path('signout/', views.signout, name='signout'),
     path('update/', views.update, name='update'),
-    path('ticket_done/', views.ticket_done, name='ticket_done'),
+    path('ticket_done/<id>/', views.ticket_done, name='ticket_done'),
     path('bookticket/<id>/', views.bookticket, name='bookticket'),
     path('edit/<id>/', views.edit, name='edit'),
+    path('editbt/<id>/', views.edit, name='edit'),
+    path('useredit/', views.useredit, name='useredit'),
+    path('user_update/', views.user_update, name='userupdate'),
 
 ]
