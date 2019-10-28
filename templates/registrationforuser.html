@@ -63,7 +63,7 @@
         <img src="{% static 'images/5.png' %}" alt="">
     </marquee>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light your">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="main_nav" aria-controls="main_nav" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -102,16 +102,18 @@
         </div>
     </nav>
 	<div class="main-w3layouts wrapper">
-		<h1 style="color: whitesmoke">SignUp Form For User</h1>
+
 		<div class="main-agileinfo">
 			<div class="agileits-top">
 				<form action="/create">
                 {%  csrf_token %}
+                    <h1 style="color: #FFD662FF">SignUp</h1>
+                    <h4 style="text-align: center"> ( User Regisration) </h4>
             <label class="form-group" for="firstname">First name </label>
-            <input class="form-control" type="text" name="firstname" required pattern="[A-Z,a-z]+"><br>
+            <input class="form-control" type="text" name="firstname" required pattern="[A-Z,a-z]+" title="User name must be Alphabet"><br>
 
             <label class="form-group" for="lastname">Last name </label>
-            <input class="form-control" type="text" name="lastname" required pattern="[A-Z,a-z]+"><br>
+            <input class="form-control" type="text" name="lastname" required pattern="[A-Z,a-z]+" title="User name must be Alphabet"><br>
 
             <label class="form-group" for="email" >Email </label>
             <input class="form-control" type="email"id="email" name="email"><br>
@@ -122,11 +124,11 @@
             <label class="form-group" for="confirmpassword">Confirm Password: </label>
             <input class="form-control" type="password" name="confirmpassword" required pattern="[A-Z,a-z,0-9]+"><br>
 
-            <input class="btn btn-success" type="submit" value="Create">
+            <input class="btn " type="submit" value="Create">
 
 
         </form>
-				<p>I've have Account: <a href="/login/">Login</a><br></p>
+				<p>I've have Account: <a href="/login/"><span class="login"> Login </span></a><br></p>
 			</div>
 		</div>
 	</div>

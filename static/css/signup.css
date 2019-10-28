@@ -143,12 +143,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .main-agileinfo {
     width: 35%;
     margin: 0em auto;
-    background: rgba(0, 0, 0, 0.18);
+    background:#000B18 ;
     background-size: cover;
   }
   
   .agileits-top {
     padding: 3em;
+      margin-top: 30px;
+
   }
   
   input[type="text"], input[type="email"], input[type="password"] {
@@ -618,6 +620,7 @@ input:valid {
     height: 40px;
     margin:  2px;
     padding: 7px;
+  background-color: white;
 }
 .button
 {
@@ -627,3 +630,54 @@ input:valid {
     padding: 4px;
     float: left;
 }
+/*CSS edited  for colors */
+.your {
+    background-color: #000B18;
+}
+/*button color*/
+.mine {
+    color: #007bff;
+    border-color: #007bff;
+    background-color: white;
+}
+.form-group{
+  color: white;
+}
+
+
+input[type=text],input[type=email],input[type=password]{
+
+  background: white;
+  border: 1px solid #FFD662FF;
+     color: black;
+
+}
+input:invalid {
+    border: 2px solid #FFD662FF;
+}
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
+    color: black;
+    border: 3px solid #FFD662FF;
+    outline: none;
+}
+input[type=submit]{
+
+    background:#FFD662FF ;
+    color: black
+;
+}
+input[type=submit]:hover{
+
+    background:#FFD662FF ;
+    color: black;
+
+;
+}
+
+.login{
+    color:
+#FFD662FF
+;
+}
+
+

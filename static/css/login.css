@@ -43,7 +43,10 @@ cursor: pointer;
 
 .card-header h3{
 color: white;
+
+;
 }
+
 
 .social_icon{
 position: absolute;
@@ -99,4 +102,31 @@ color: white;
 
 .links a{
 margin-left: 4px;
+}
+/**/
+.mine{
+    background-color: #000B18;
+}
+/*card*/
+
+input[type=submit]{
+
+    background:#FFD662FF ;
+    color: black
+;
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
+    color: black;
+    border: 3px solid #FFD662FF;
+    outline: none;
+}
+
+input[type=text],input[type=email],input[type=password]{
+
+  background: white;
+  border: 1px solid #FFD662FF;
+     color: black;
+width: 80%;
+    height: 38px;
 }

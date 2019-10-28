@@ -5,3 +5,18 @@ background-repeat: no-repeat;
 height: auto;
 font-family: 'Numans', sans-serif;
 }
+
+
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
+    color: black;
+    border: 3px solid #FFD662FF;
+    outline: none;
+}
+input[type=text],input[type=email],input[type=password]{
+
+  background: white;
+  border: 1px solid #FFD662FF;
+     color: black;
+width: 80%;
+    height: 38px;
+}

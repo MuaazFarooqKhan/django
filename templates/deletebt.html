@@ -45,35 +45,34 @@
 <body>
 {% block body %}
 
-<div class="content">
+<div class="content" style="height: auto; min-height: 515px;">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Delete BT</h4>
-                        <p class="category">Here is a subtitle for this table</p>
+                        <h4 class="title" style="color: #FFD662FF;text-align: center  ">Delete BT</h4>
+                        <p class="category"></p>
                     </div>
                     <div class="content table-responsive table-full-width">
                         <table class="table table-hover table-striped">
                             <thead>
-                                <th>username</th>
-                                <th>email</th>
-                                <th>fnames</th>
-                                <th>lnames</th>
-                                <th>address</th>
-                                <th>city</th>
-
+                                <th style="color: #9A9A9A">username</th>
+                                <th style="color: #9A9A9A">email</th>
+                                <th style="color: #9A9A9A">fnames</th>
+                                <th style="color: #9A9A9A">lnames</th>
+                                <th style="color: #9A9A9A">address</th>
+                                <th style="color: #9A9A9A">city</th>
                             </thead>
                             <tbody>
                             {% for bt in bts %}
                                 <tr>
-                                    <td>{{ bt.username }}</td>
-                                    <td>{{ bt.email }}</td>
-                                    <td>{{ bt.fnames }}</td>
-                                    <td>{{ bt.lnames }}</td>
-                                    <td>{{ bt.address }}</td>
-                                    <td>{{ bt.city }}</td>
+                                    <td style="color: #9A9A9A">{{ bt.username }}</td>
+                                    <td style="color: #9A9A9A">{{ bt.email }}</td>
+                                    <td style="color: #9A9A9A">{{ bt.fnames }}</td>
+                                    <td style="color: #9A9A9A">{{ bt.lnames }}</td>
+                                    <td style="color: #9A9A9A">{{ bt.address }}</td>
+                                    <td style="color: #9A9A9A">{{ bt.city }}</td>
                                     <td>
                                         <a class="btn btn-info" href="/edit/{{ bt.bt_id }}">Edit</a>
                                         <a class="btn btn-danger" href="/delete/{{ bt.bt_id }}">Delete</a>

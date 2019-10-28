@@ -50,7 +50,8 @@
         <img src="{% static 'images/5.png' %}" alt="">
     </marquee>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #000B18
+">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="main_nav" aria-controls="main_nav" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -71,7 +72,7 @@
         </div>
     </nav>
     <div class="col-md-10">
-     <div class="card" style="margin-left: 25%">
+     <div class="card" style="margin-left: 25%;margin-top:30px;background-color: #000B18">
   <div class="content">
       <div class="row">
           <div class="col-md-12">
@@ -79,7 +80,7 @@
  {%  csrf_token %}
         <div class="plane">
             <div class="cockpit">
-                <h1>Please select a seat</h1>
+                <h1 style="color:#FFD662FF  ">Please select a seat</h1>
             </div>
             <ol class="cabin fuselage" >
                 <li class="row row--1">
@@ -316,53 +317,53 @@
 {#<button type="submit" class="button btn btn-dark">Confirm</button>#}
 
 
-        <div class="row">
+        <div class="row" style="position: center">
             <div class="col-md-5">
-                <div class="form-group" style="margin-left: 10%">
-                    <label style="color: black">Username</label>
+                <div class="form-group" style="margin-left: 25%">
+                    <label style="color: #9A9A9A">Username</label>
                     <input type="text" class="form-control" formControlName='Username' placeholder="Username"name="username">
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="form-group">
-                    <label style="color: black">Phone no.</label>
+                    <label style="color: #9A9A9A">Phone no.</label>
                     <input type="text" class="form-control" formControlName='phoneno' placeholder="Phone no." name="phone">
                 </div>
             </div>
             <div class="col-md-5">
-                <div class="form-group" style="margin-left: 10%">
-                    <label style="color: black">CNIC</label>
+                <div class="form-group" style="margin-left: 25%">
+                    <label style="color:#9A9A9A">CNIC</label>
                     <input type="text" class="form-control" formControlName='cnic' placeholder="Cnic" name="cnic">
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="form-group">
-                    <label for="exampleInputEmail1" style="color: black">Email</label>
+                    <label for="exampleInputEmail1" style="color: #9A9A9A">Email</label>
                     <input type="email" class="form-control" formControlName='Email' placeholder="Email" name="email">
                 </div>
             </div>
-            <div class="col-md-5">
-                <div class="form-group" style="margin-left: 10%">
-                    <label for="exampleInputEmail1" style="color: black">Amount</label>
-                    <input type="text" class="form-control" formControlName='amount' placeholder="Amount" name="amount">
-                </div>
-            </div>
+{#            <div class="col-md-5">#}
+{#                <div class="form-group" style="margin-left: 10%">#}
+{#                    <label for="exampleInputEmail1" style="color: black">Amount</label>#}
+{#                    <input type="text" class="form-control" formControlName='amount' placeholder="Amount" name="amount">#}
+{#                </div>#}
+{#            </div>#}
 {#            <div class="col-md-5">#}
 {#                <div class="form-group">#}
 {#                    <label for="exampleInputEmail1" style="color: black">No. of Seats</label>#}
 {#                    <input type="text" class="form-control" formControlName='noofseats' placeholder="Number Of Seats" name="noofseats">#}
 {#                </div>#}
 {#            </div>#}
-            <div class="col-md-5">
-                <div class="form-group">
-                    <label for="exampleInputEmail1" style="color: black">Total Number Of Seats</label>
-                    <input type="text" class="form-control" formControlName='seatsno' placeholder="Seats No." name="seatsno">
-                </div>
-            </div>
+{#            <div class="col-md-5">#}
+{#                <div class="form-group">#}
+{#                    <label for="exampleInputEmail1" style="color: black">Total Number Of Seats</label>#}
+{#                    <input type="text" class="form-control" formControlName='seatsno' placeholder="Seats No." name="seatsno">#}
+{#                </div>#}
+{#            </div>#}
                         <div class="clearfix"></div>
 
         </div>
-                   <button type="submit" class="button btn btn-dark">Confirm</button>
+                   <button type="submit" class=" btn btn-u  " style="position: center;margin-left: 200px; width: 300px">Confirm</button>
     </form>
 
 

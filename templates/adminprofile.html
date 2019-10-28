@@ -131,12 +131,12 @@
                             <a href="#">
                                 <img class="avatar border-gray" src="{% static 'images/face-3.jpg' %}" alt="..." />
 
-                                <h4 class="title">{{ com_username }} {{ com_userlastname }}<br />
+                                <h4 class="title" style="color:#FFD662FF ;">{{ com_username }} {{ com_userlastname }}<br />
                              <small>{{ com_name }}</small>
                           </h4>
                             </a>
                         </div>
-                        <p class="description text-center">
+                        <p class="description text-center "style="color:#FFD662FF ;">
                           {{ companyemail }}
                         </p>
                     </div>
@@ -149,7 +149,7 @@
             <div class="col-md-8"  style="margin-top: 2%; margin-left: 18%">
                     <div class="card">
                         <div class="header">
-                            <h4 class="title">Edit Profile</h4>
+                            <h4 class="title"   style="color:#FFD662FF ; text-align: center" >  Edit Profile   </h4>
                         </div>
                         <div class="content">
                                 <form>
@@ -250,13 +250,14 @@
 {#                                        <input class="fname rounded border" style="width:40%" formControlName='city' placeholder="City" type="text">#}
                                     </div>
                                     <div class="form-group">
-                                        <input class="fname rounded border" style="float: left;width:30%" formControlName='password' placeholder="Your Password" type="password">
+                                        <input class="fname rounded border" style="float: left;width:30%" formControlName='password' placeholder="Your Password" type="password" value="{{ companypassword }}">
                                     </div>
                                     <div class="form-group" >
-                                        <input class="fname rounded border" style="width:30%" formControlName='confirmpassword' name="password" placeholder="Confirm Password" required="" type="password">
+                                        <input class="fname rounded border" style="width:30%" formControlName='confirmpassword' name="password" placeholder="Confirm Password" required="" type="password" value="{{ companypassword }}">
                                     </div>
+
                                     <div class="fname form-group">
-                                        <a class="btn btn-info btn-fill pull-right" href="/edit/{{ up.id }}">Update Profile</a>
+                                        <a class="btn btn-warning btn-fill pull-right" href="/edit/{{ cusid }}" style="color:black ; background-color: #FFD662FF">Update Profile</a>
                                     </div>
                          </form>
                         </div>

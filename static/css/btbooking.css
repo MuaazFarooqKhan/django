@@ -1,18 +1,20 @@
-html,body{
-    background-image: linear-gradient(
-#00d2ff,
-#928DAB
-);
+html,body {
+    background-image: linear-gradient(to right top, #ffd662, #c39f4f, #886c3c, #4e3f29, #181716);
+
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
     width: auto;
     font-family: 'Numans', sans-serif;
 }
+body{
+        background-image: linear-gradient(to right top, #ffd662, #c39f4f, #886c3c, #4e3f29, #181716);
+}
 .from{
     margin-top: 3%;
     padding-left: 5%;
     float: left;
+
 }
 .to{
     margin-top: 3%;
@@ -42,6 +44,8 @@ form.group{
     float: left;
     margin:  28px;
     padding: 7px;
+    position: center;
+    background-color:#000B18;
 }
 .butn
 {
@@ -304,12 +308,14 @@ ol {
 
 .card .table tbody td:first-child,
 .card .table thead th:first-child {
+
     padding-left: 15px;
 }
 
 .card .table tbody td:last-child,
 .card .table thead th:last-child {
     padding-right: 15px;
+
 }
 
 .card .alert {
@@ -394,4 +400,32 @@ input[type=checkbox] + label {
 input[type=checkbox]:checked + label {
     color: #f00;
     font-style: normal;
+}
+
+.btn-p {
+
+
+
+    color: #FFD662FF;
+    background-color: #000B18;
+    border-color: #000B18;
+
+}
+.table-info tbody+tbody, .table-info td, .table-info th, .table-info thead th {
+    border-color: #FFD662FF;
+    background-color: #000B18;
+
+}
+.btn-u {
+    color: #000B18;
+    background-color:#FFD662FF;
+    border-color:#FFD662FF;
+}
+
+.table-info tbody+tbody, .table-info td, .table-info th, .table-info thead th {
+    border-color: #FFD662FF;
+    background-color: #000B18;
+}
+.test{
+    font-size: 16px;
 }

@@ -70,7 +70,7 @@
                     <img src="{% static 'images/5.png' %}" alt="">
                 </marquee>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+<nav class="navbar navbar-expand-lg navbar-light navi ">
     <div class="container-fluid">
         <div class="navbar-header">
         <button type="button"  class="navbar-toggler" data-toggle="collapse" data-target="main_nav" >
@@ -81,27 +81,27 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <h3 style="margin-right: 32px">
-                            <a href="/adminprofile/">Admin Panel</a>
+                            <a href="/adminprofile/">  <span class="spn">  Admin Panel </span> </a>
                         </h3>
                     </li>
                     <li class="nav-item">
                         <h3 style="margin-right: 32px">
-                            <a href="/createbt/">Creat Bt</a>
+                            <a href="/createbt/"> <span class="spn"> Creat Employee </span></a>
                         </h3>
                     </li>
                     <li class="nav-item">
                         <h3 style="margin-right: 32px">
-                            <a href="/deletebt/">Delete Bt</a>
+                            <a href="/deletebt/"><span class="spn">Delete Employee </span></a>
                         </h3>
                     </li>
                     <li class="nav-item">
                         <h3 style="margin-right: 32px">
-                            <a href="/calladdthings/">Add Things</a>
+                            <a href="/calladdthings/"<span class="spn">Add Services </span> </a>
                         </h3>
                     </li>
                     <li class="nav-item">
                         <h3 style="margin-right: 32px">
-                            <a href="/adminsearch/">Search</a>
+                            <a href="/adminsearch/"><span class="spn">Search </span></a>
                         </h3>
                     </li>
 {#                    <li class="nav-item">#}
@@ -132,22 +132,22 @@
             <div class="col-md-6" style="margin-left: 25%; margin-top: 5%;color: transparent">
                 <div class="card" style="background-color: transparent">
                     <div class="header">
-                        <h4 class="title">Busses</h4>
+                        <h4 class="title" style="color: #FFD662FF;text-align: center">Busses</h4>
                     <hr style="border-color: black">
                         <div class="content">
                             <form action="/addthings">
                                 <div class="col-md-7">
                                     <div class="form-group">
-                                        <label style="margin-left: 20%; color: black">Bus No.</label>
+                                        <label style="margin-left: 20%; color: black"> <span class="texst">  Bus No. </span></label>
                                         <input type="text" class="form-control" placeholder="BusNo" name="seats" style="margin-left: 30%" required pattern="[0-9]+">
                                     </div>
                                     <div class="form-group">
-                                        <label style="margin-left: 20%; color: black">Bus Plate No.</label>
+                                        <label style="margin-left: 20%; color: black"> <span class="texst"> Bus Plate No.</span></label>
 
                                         <input type="text" class="form-control" placeholder="BusPlateNo" name="platenumber" style="margin-left: 30%" required pattern="[a-z,A-Z,0-9]+">
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right; margin-bottom: 3%">Add Busses</button>
+                                <button type="submit" class="btn  btn-our btn-fill pull-right" style="float: right; margin-bottom: 3%">Add Busses</button>
                             </form>
                         </div>
 
@@ -161,7 +161,7 @@
             <div class="col-md-12">
                 <div class="card" style="margin-top:1%; margin-bottom: 7%; background-color: transparent">
                     <div class="header">
-                        <h4 class="title">Stations</h4>
+                        <h4 class="title text-centerr"> <span class="color_it"> Stations </span>    </h4>
                     <hr style="border-color: black">
                         <div class="content">
                             <form action="/station">
@@ -169,7 +169,7 @@
 
                                 <div class="row">
                                     <div class="from col-md-12">
-                                        <label class="fromlabel" style="margin-left: 35%; color: black">
+                                        <label class="fromlabel texst" style="margin-left: 35%; color: ">
                                             All Stations
                                         </label>
                                         <select style="margin-left: 5%">
@@ -195,13 +195,13 @@
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Station" name="stationname" required pattern="[A-Z,a-z,\s]+">
                                         </div>
-                                        <button type="submit" class="btn btn-info btn-fill pull-right">Add Station</button>
+                                        <button type="submit" class="btn btn-our btn-fill pull-right">Add Station</button>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" formControlName='deletestation' placeholder="Delete Station" pattern="[A-Z,a-z]+">
                                         </div>
-                                        <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right">Delete Station</button>
+                                        <button type="submit" class="btn btn-our btn-fill pull-right" style="float: right">Delete Station</button>
                                     </div>
                                 </div>
                             </form>
@@ -217,14 +217,14 @@
                 <div class="col-md-10" style="margin-left: 8%; margin-right: 7%; margin-top: 1%;">
                     <div class="card" style="background-color: transparent">
                         <div class="header">
-                            <h4 class="title">Routes</h4>
+                            <h4 class="title text-centerr " style="color: #FFD662FF">Routes</h4>
                             <hr>
                             <div class="content">
                                 <form action="/routes">
                                     {% csrf_token %}
                                     <div class="row">
                                         <div class="from col-md-4">
-                                            <label class="fromlabel" style="margin-left:20%; float: left; color: black">
+                                            <label class="fromlabel texst" style="margin-left:50%; float: left">
                                                 From City
                                             </label>
                                             <select id="inputState" name = "arrive" style="margin-left:50%; color: black" >
@@ -236,7 +236,7 @@
                                         </div>
 
                                         <div class="to col-md-5">
-                                            <label class="tolabel" style="margin-left:40%; float: left; color: black">
+                                            <label class="tolabel texst " style="margin-left:60%; float: left">
                                                 To City
                                             </label>
                                             <select  id="inputState"  name = "dep"  style="margin-left:60%;">
@@ -246,8 +246,22 @@
                                                 {% endfor %}
                                             </select>
                                         </div>
+                                    </div><br>
+
+
+                                        <label class="tolabel  texst" style="margin-left:353px; ">
+                                           Bus No
+                                            </label>
+                                 <div class="col-md-4">
+                                    <select  id="inputState"  name = "busno"  style="margin-left:350px; margin-top: -100px">
+                                                <option value='' class="" selected="selected">--Select Departure--</option>
+                                            {% for b in b_details %}
+                                            <option value='{{ b.id }}'>{{ b.busno}}</option>
+                                                {% endfor %}
+                                            </select>
+
                                     </div>
-                                <div class="col-md-4">
+                                    <div class="col-md-4">
                                         <div class="form-group">
 {#                                            <h1>{{ myDate|date:'Y-m-d H:i' }}</h1>#}
 {#                                            <input type="datetime-local" class="form-control" name="bdaytime" name="Time">#}
@@ -260,26 +274,14 @@
                                                             });
                                                         </script>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="tolabel" style="margin-left:90%; float: left; color: black;">
-                                                Bus No
-                                            </label>
-                                    <select  id="inputState"  name = "busno"  style="margin-left:100%; margin-top: -100px">
-                                                <option value='' class="" selected="selected">--Select Departure--</option>
-                                            {% for b in b_details %}
-                                            <option value='{{ b.id }}'>{{ b.busno}}</option>
-                                                {% endfor %}
-                                            </select>
-
-                                    </div>
+                                    </div><br>
 
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Price" name="price" style="margin-left: 100%; margin-top: 3%">
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-info btn-fill pull-right" style="float: right">Update Profile</button>
+                                    <button type="submit" class="btn btn-our btn-fill pull-right" style="float: right">Update Profile</button>
                                 </form>
                             </div>
                         </div>

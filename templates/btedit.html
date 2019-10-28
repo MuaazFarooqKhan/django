@@ -49,7 +49,7 @@
 {#    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />#}
 </head>
 
-<body style="    background-image: linear-gradient(to right top, #ffd662, #c39f4f, #886c3c, #4e3f29, #181716);">
+<body>
  <marquee style="float: left" align="{mid}" direction="left" scrollamount="10" behavior="altenate" scrolldelay="50" loop="" bgcolor="white" width="50%" height="50px" onmouseover="this.stop()" onmouseout="this.start()" class="firstmarquee">
         <p class="navtext">
             You are the admin of the company. You have the authority of each of every thing like add new bt, new station or can add new busses.
@@ -64,7 +64,7 @@
         <img src="{% static 'images/5.png' %}" alt="">
     </marquee>
 
-    <nav class="navbar navbar-expand-lg navbar-light "style="background-color:#000B18 ">
+    <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #000B18">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="main_nav" aria-controls="main_nav" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -98,7 +98,7 @@
 {#                    </li>#}
                 </ul>
                 <span class="mr-auto"></span>
-                <a class="bttttn btn btn-outline-primary btn-block" href="/userticket/">Back </a>
+                <a class="bttttn btn btn-outline-primary btn-block" href="/btticket/">Back </a>
                 <form action="/signout">
                     {% csrf_token %}
                     <div class="form-group">
@@ -108,37 +108,36 @@
             </div>
         </div>
     </nav>
-<div class="small_div" style=" margin-top: 16px;height: 590px">
+<div class="small_div" style=" margin-top: 16px ;height: 700px">
 
-<div class="container " style="width: 400px;background-color:#000B18;height: 500px ">
+<div class="container" style="width: 400px;background-color:#000B18;height: 600px " >
     <br>
-    <h2  style="text-align: center;color:#FFD662FF">Edit Profile</h2>
+    <h2 style="text-align: center;color:#FFD662FF">Edit Profile</h2>
     <hr>
 
-    <form action="/user_update/ " style="margin-bottom: 102px;">
+    <form action="/bt_update/ " style="margin-bottom: 0px;">
 
         {% csrf_token %}
 
         <label class="form-group" for="title" style="color:white ">First Name: </label>
-        <input class="form-control" type="text" name="title" value="{{ cus.firstname }}" placeholder="{{ cus.firstname }}">
+        <input class="form-control" type="text" name="title" value="{{ bt.username }}" placeholder="{{ bt.username }}">
 
         <label class="form-group" for="price" style="color:white ">Last Name: </label>
-        <input class="form-control" type="text" name="price" value="{{ cus.lastname }}" placeholder="{{ cus.lastname }}">
+        <input class="form-control" type="text" name="price" value="{{ bt.fnames }}" placeholder="{{ bt.fnames }}">
 
         <label class="form-group" for="author" style="color:white ">Password: </label>
-        <input class="form-control" type="text" name="author" value="{{ cus.password }}" placeholder="{{ cus.password }}">
+        <input class="form-control" type="text" name="author" value="{{ bt.lnames }}" placeholder="{{ bt.lnames }}">
 
         <label class="form-group" for="author" style="color:white ">Password: </label>
-        <input class="form-control" type="text" name="cpass" value="{{ cus.password }}" placeholder="{{ cus.confirmpassword }}">
+        <input class="form-control" type="text" name="cpass" value="{{ bt.passwords}}" placeholder="{{ bt.passwords }}">
         <br>
 
-        <input class="btn btn-u  " type="submit" value="Update" style="width: 100%">
+        <input class="btn btn-u " type="submit" value="Update" style="width: 100%;">
 
     </form>
 
 
 </div>
 </div>
-
 </body>
 </html>

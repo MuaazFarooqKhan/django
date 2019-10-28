@@ -64,7 +64,7 @@
         <img src="{% static 'images/5.png' %}" alt="">
     </marquee>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light your">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="main_nav" aria-controls="main_nav" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -111,11 +111,13 @@
 {#            </div>#}
 {#        {% endfor %}#}
 {#    {% endif %}#}
-		<h1 style="color: white">SignUp Form For Company</h1>
+
 		<div class="main-agileinfo">
 			<div class="agileits-top">
 				<form action="/companyregister">
                 {%  csrf_token %}
+                	<h1 style="color: #FFD662FF">SignUp</h1>
+                <h4 style="text-align: center"> (Company Registration) </h4>
             <label class="form-group" for="adminfirstname">Admin First Name: </label>
             <input class="form-control" type="text" name="adminfirstname" required pattern="[A-Z,a-z]+"><br>
 
@@ -145,7 +147,7 @@
 
 
         </form>
-				<p>I've have Account: <a href="/login/">Login</a><br></p>
+				<p>I've have Account: <a href="/login/"><span class="login"> Login </span></a><br></p>
 			</div>
 		</div>
 	</div>

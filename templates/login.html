@@ -58,7 +58,7 @@
         <img src="{% static 'images/5.png' %}" alt="">
     </marquee>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light mine">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="main_nav" aria-controls="main_nav" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -107,15 +107,15 @@
     {% endif %}
 	<div class="d-flex justify-content-center">
 		<div class="card" style="margin-bottom: 79px">
-			<div class="card-header">
-				<h3>Sign In</h3>
+			<div class="card-header " style="background-color: #000B18;text-align: center " >
+				<h3 style="color: #FFD662FF">Sign In</h3>
 				<div class="d-flex justify-content-end social_icon">
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-google-plus-square"></i></span>
 					<span><i class="fab fa-twitter-square"></i></span>
 				</div>
 			</div>
-				<div class="card-body form-bg">
+				<div class="card-body form-bg colour" style="background-color: #000B18" >
 				<form action="/authentication">
                     {%  csrf_token %}
 					<div class="input-group form-group">
@@ -125,7 +125,7 @@
 						<input type="text" name='email' placeholder="email" id="email">
 
 					</div>
-					<div class="input-group form-group">
+					<div class="input-group form-group ">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
@@ -140,12 +140,12 @@
 				</form>
 		</div>
 
-			<div class="card-footer">
+			<div class="card-footer "style="background-color: #000B18">
 				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="/registrationforuser/" style="margin-left: 10%">Sign Up</a>
+					Don't have an account?<a href="/registrationforuser/" style="margin-left: 10%; color: #FFD662FF">Sign Up</a>
 				</div>
 				<div class="d-flex justify-content-center links">
-					Register company? <a href="/companyregister/" style="margin-left: 10%">Reg Here.</a>
+					Register company? <a href="/companyregister/" style="margin-left: 10%; color: #FFD662FF">Reg Here.</a>
 				</div>
 			</div>
 		</div>

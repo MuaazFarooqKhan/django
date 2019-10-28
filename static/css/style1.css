@@ -73,13 +73,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #30323A;
+  color: white;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
 
 a:hover, a:focus {
-  color: #127cdf;
+  color: #FFD662FF;
   text-decoration: none;
   outline: none;
 }

@@ -24,6 +24,7 @@ urlpatterns = [
     path('routes/', views.routes, name='routes'),
     path('station/', views.station, name='station'),
     path('root_selectionn/', views.root_selectionn, name='root_selectionn'),
+    path('rootselectionn/', views.rootselectionn, name='rootselectionn'),
     path('adminsearch/', views.adminsearch, name='adminsearch'),
     path('signout/', views.signout, name='signout'),
     path('update/', views.update, name='update'),
@@ -33,5 +34,8 @@ urlpatterns = [
     path('editbt/<id>/', views.edit, name='edit'),
     path('useredit/', views.useredit, name='useredit'),
     path('user_update/', views.user_update, name='userupdate'),
+    path('btedit/', views.btedit, name='btedit'),
+    path('bt_update/', views.bt_update, name='btupdate'),
+    path('admindelete/<id>/', views.admindelete, name='admindelete'),
 
 ]

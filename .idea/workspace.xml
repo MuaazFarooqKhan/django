@@ -2,32 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45af2771-0070-41bc-b40d-76b3a38f552d" name="Default Changelist" comment="done">
-      <change afterPath="$PROJECT_DIR$/static/images/123.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/signup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/busss.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/images.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/z (3).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/z (4).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/z (5).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/z (8).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/btedit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnlineSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineSystem/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussystem/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussystem/migrations/0002_bootticket.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussystem/migrations/0003_auto_20190820_0200.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussystem/migrations/0004_auto_20190820_0201.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussystem/migrations/0005_bootticket_pieces.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussystem/migrations/0006_auto_20190823_0556.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussystem/migrations/0007_auto_20190823_0619.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussystem/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineSystem/middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bussystem/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bussystem/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bussystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bussystem/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bussystem/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bussystem/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/adminprofile.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/adminprofile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/btbooking.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/btbooking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/createbt.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/createbt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bus2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/bus2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/in.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/in.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/AddThings.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddThings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Addthingsheader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Addthingsheader.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/BtTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BtTicket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/adminheader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adminheader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/adminprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adminprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/adminsearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adminsearch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/bookticket.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bookticket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/companyregister.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/companyregister.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/createbt.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/createbt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/deletebt.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/deletebt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/editbt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registrationforuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registrationforuser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/useredit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/useredit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/userticket.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/userticket.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,84 +68,125 @@
     <session id="1166699811">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="40" />
           <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.196" value="1" />
           <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.230" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.47" value="3" />
+          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.44" value="4" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.47" value="4" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.52" value="2" />
+          <entry key="project.open.time.53" value="2" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.55" value="1" />
-          <entry key="project.open.time.57" value="1" />
-          <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.57" value="2" />
+          <entry key="project.open.time.59" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.62" value="1" />
-          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.63" value="2" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.67" value="2" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="589" />
-          <entry key="html" value="7080" />
-          <entry key="py" value="6566" />
+          <entry key="css" value="2257" />
+          <entry key="html" value="9845" />
+          <entry key="py" value="7646" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="589" />
-          <entry key="HTML" value="7080" />
+          <entry key="CSS" value="2257" />
+          <entry key="HTML" value="9845" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="6566" />
+          <entry key="Python" value="7646" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="JPG" value="1" />
-          <entry key="css" value="127" />
-          <entry key="html" value="269" />
-          <entry key="jpg" value="2" />
+          <entry key="JPG" value="2" />
+          <entry key="css" value="194" />
+          <entry key="html" value="344" />
+          <entry key="jpg" value="16" />
           <entry key="js" value="5" />
-          <entry key="py" value="182" />
+          <entry key="map" value="7" />
+          <entry key="png" value="3" />
+          <entry key="py" value="220" />
+          <entry key="rnc" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="127" />
-          <entry key="HTML" value="269" />
-          <entry key="Image" value="3" />
+          <entry key="CSS" value="194" />
+          <entry key="HTML" value="344" />
+          <entry key="Image" value="21" />
           <entry key="JavaScript" value="5" />
-          <entry key="Python" value="182" />
+          <entry key="Python" value="220" />
+          <entry key="RNG Compact" value="1" />
+          <entry key="SourceMap" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="OnlineSystem" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OnlineSystem/middleware.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bussystem/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="156">
+              <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
+                <marker date="1572286119638" expanded="true" signature="548:596" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bussystem/views.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bussystem/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+            <state relative-caret-position="160">
+              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OnlineSystem/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/mail/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -144,43 +196,43 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>usertic</find>
-      <find>userti</find>
-      <find>stat</find>
-      <find>booktick</find>
-      <find>delete</find>
-      <find>Delete</find>
-      <find>dele</find>
-      <find>busno</find>
-      <find>companyr</find>
-      <find>message</find>
-      <find>email</find>
-      <find>mar</find>
-      <find>form</find>
-      <find>calladd</find>
-      <find>adminp</find>
-      <find>signou</find>
-      <find>home2</find>
-      <find>home2`</find>
-      <find>but</find>
-      <find>input</find>
-      <find>agileinfo</find>
-      <find>agileits-top p a</find>
-      <find>btton</find>
-      <find>array</find>
-      <find>[</find>
-      <find>callc</find>
-      <find>root</find>
-      <find>usert</find>
-      <find>callad</find>
+      <find>ed</find>
+      <find>ad</find>
+      <find>id</find>
+      <find>btti</find>
+      <find>createbt</find>
+      <find>booktic</find>
+      <find>ticket_d</find>
+      <find>th</find>
+      <find>row</find>
+      <find>bu</find>
+      <find>createb</find>
+      <find>creat</find>
       <find>auth</find>
+      <find>create</find>
+      <find>btt</find>
+      <find>admins</find>
+      <find>co</find>
+      <find>root</find>
+      <find>Roo</find>
+      <find>Root</find>
+      <find>navi</find>
+      <find>nav</find>
+      <find>test</find>
+      <find>login</find>
+      <find>bttt</find>
+      <find>signo</find>
+      <find>adm</find>
+      <find>deletebt</find>
+      <find>delete</find>
+      <find>edit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,54 +241,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/OnlineSystem/urls.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/static/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/static/css/dashboard.css" />
         <option value="$PROJECT_DIR$/templates/userpage.html" />
         <option value="$PROJECT_DIR$/templates/headerBt.html" />
         <option value="$PROJECT_DIR$/templates/performance.html" />
-        <option value="$PROJECT_DIR$/templates/Addthingsheader.html" />
         <option value="$PROJECT_DIR$/templates/header.html" />
-        <option value="$PROJECT_DIR$/static/css/light-bootstrap-dashboard.css" />
         <option value="$PROJECT_DIR$/templates/routes.html" />
         <option value="$PROJECT_DIR$/templates/station.html" />
-        <option value="$PROJECT_DIR$/static/css/createbt.css" />
-        <option value="$PROJECT_DIR$/templates/adminsearch.html" />
-        <option value="$PROJECT_DIR$/templates/deletebt.html" />
         <option value="$PROJECT_DIR$/static/js/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/templates/navbar.html" />
         <option value="$PROJECT_DIR$/static/css/btcancel.css" />
         <option value="$PROJECT_DIR$/templates/usercancel.html" />
         <option value="$PROJECT_DIR$/templates/BtCancel.html" />
-        <option value="$PROJECT_DIR$/templates/adminprofile.html" />
-        <option value="$PROJECT_DIR$/static/css/home.css" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/static/css/gijgo.min.css" />
-        <option value="$PROJECT_DIR$/templates/adminheader.html" />
         <option value="$PROJECT_DIR$/static/css/gijgoadmin.min.css" />
-        <option value="$PROJECT_DIR$/templates/createbt.html" />
         <option value="$PROJECT_DIR$/bussystem/admin.py" />
         <option value="$PROJECT_DIR$/templates/checkboxtest.html" />
         <option value="$PROJECT_DIR$/templates/editbt.html" />
-        <option value="$PROJECT_DIR$/templates/BtTicket.html" />
-        <option value="$PROJECT_DIR$/static/css/btbooking.css" />
-        <option value="$PROJECT_DIR$/OnlineSystem/settings.py" />
-        <option value="$PROJECT_DIR$/static/css/adminprofile.css" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/static/css/signup.css" />
-        <option value="$PROJECT_DIR$/static/css/login.css" />
-        <option value="$PROJECT_DIR$/templates/registrationforuser.html" />
         <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/templates/useredit.html" />
-        <option value="$PROJECT_DIR$/bussystem/urls.py" />
-        <option value="$PROJECT_DIR$/bussystem/models.py" />
-        <option value="$PROJECT_DIR$/templates/companyregister.html" />
-        <option value="$PROJECT_DIR$/templates/AddThings.html" />
-        <option value="$PROJECT_DIR$/templates/userticket.html" />
-        <option value="$PROJECT_DIR$/templates/bookticket.html" />
         <option value="$PROJECT_DIR$/OnlineSystem/middleware.py" />
+        <option value="$PROJECT_DIR$/static/css/pe-icon-7-stroke.css" />
+        <option value="$PROJECT_DIR$/static/css/signup.css" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/static/css/login.css" />
+        <option value="$PROJECT_DIR$/static/css/style1.css" />
+        <option value="$PROJECT_DIR$/static/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/static/css/light-bootstrap-dashboard.css" />
+        <option value="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/static/css/createbt.css" />
+        <option value="$PROJECT_DIR$/templates/adminheader.html" />
+        <option value="$PROJECT_DIR$/templates/registrationforuser.html" />
+        <option value="$PROJECT_DIR$/templates/adminprofile.html" />
+        <option value="$PROJECT_DIR$/templates/bookticket.html" />
+        <option value="$PROJECT_DIR$/templates/btedit.html" />
+        <option value="$PROJECT_DIR$/templates/Addthingsheader.html" />
+        <option value="$PROJECT_DIR$/templates/useredit.html" />
+        <option value="$PROJECT_DIR$/templates/createbt.html" />
+        <option value="$PROJECT_DIR$/bussystem/models.py" />
+        <option value="$PROJECT_DIR$/templates/BtTicket.html" />
+        <option value="$PROJECT_DIR$/templates/userticket.html" />
+        <option value="$PROJECT_DIR$/static/css/home.css" />
+        <option value="$PROJECT_DIR$/static/css/adminprofile.css" />
+        <option value="$PROJECT_DIR$/templates/AddThings.html" />
+        <option value="$PROJECT_DIR$/templates/adminsearch.html" />
+        <option value="$PROJECT_DIR$/static/css/btbooking.css" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
+        <option value="$PROJECT_DIR$/templates/companyregister.html" />
+        <option value="$PROJECT_DIR$/bussystem/urls.py" />
+        <option value="$PROJECT_DIR$/templates/deletebt.html" />
+        <option value="$PROJECT_DIR$/OnlineSystem/settings.py" />
         <option value="$PROJECT_DIR$/bussystem/views.py" />
       </list>
     </option>
@@ -247,7 +301,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -299,6 +353,11 @@
               <item name="OnlineSystem" type="462c0819:PsiDirectoryNode" />
               <item name="OnlineSystem" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="OnlineSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -309,7 +368,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/talha/full" />
+    <property name="last_opened_file_path" value="F:/Study/Projects/talha/full" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -387,12 +446,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23146747" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.2065053" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
+      <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.20347957" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49394855" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49319214" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -400,8 +459,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5060514" side_tool="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48789713" weight="0.31639344" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51664144" side_tool="true" weight="0.3967213" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48335856" visible="true" weight="0.19180328" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -411,12 +470,12 @@
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20953101" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.2065053" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
+      <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.20347957" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49546143" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49319214" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -424,8 +483,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5045386" side_tool="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48562783" weight="0.34590164" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51664144" side_tool="true" weight="0.3967213" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48335856" weight="0.19180328" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -486,318 +545,304 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/routes.css">
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret column="340723" selection-start-column="340715" selection-end-column="340723" />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css.map">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/slick.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/slick-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/bootstrap-notify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/bootstrap-select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Addthingsheader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/btcancel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/update.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/animate.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/gijgoadmin.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31259" selection-start-column="31259" selection-end-column="31259" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/gijgo.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31315" selection-start-column="31315" selection-end-column="31315" />
-        </state>
-      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/createbt.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="357">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/deletebt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="77" column="75" selection-start-line="77" selection-start-column="71" selection-end-line="77" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/adminsearch.html">
+    <entry file="file://$PROJECT_DIR$/static/css/routes.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/checkboxtest.html">
+    <entry file="file://$PROJECT_DIR$/templates/registrationforuser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+        <state relative-caret-position="220">
+          <caret line="115" column="132" selection-start-line="115" selection-start-column="132" selection-end-line="115" selection-end-column="132" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/editbt.html">
+    <entry file="file://$PROJECT_DIR$/templates/editbt.html" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/btbooking.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6477">
-          <caret line="381" column="5" selection-start-line="381" selection-start-column="5" selection-end-line="381" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/adminprofile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/adminheader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BtTicket.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11067">
-          <caret line="651" selection-start-line="592" selection-end-line="651" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineSystem/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/createbt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" column="59" lean-forward="true" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/adminprofile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="64" column="66" lean-forward="true" selection-start-line="64" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <caret line="134" column="57" selection-start-line="134" selection-start-column="57" selection-end-line="134" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/signup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="595" column="27" lean-forward="true" selection-start-line="595" selection-start-column="27" selection-end-line="595" selection-end-column="27" />
+        <state relative-caret-position="114">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="118" column="20" lean-forward="true" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <caret line="5" column="38391" selection-start-line="5" selection-start-column="38391" selection-end-line="5" selection-end-column="38395" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bussystem/migrations/0008_auto_20190824_0430.py" />
-    <entry file="file://$PROJECT_DIR$/bussystem/migrations/0011_auto_20190830_1119.py" />
-    <entry file="file://$PROJECT_DIR$/bussystem/migrations/0010_auto_20190824_0431.py" />
-    <entry file="file://$PROJECT_DIR$/bussystem/migrations/0009_auto_20190824_0430.py" />
-    <entry file="file://$PROJECT_DIR$/bussystem/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
+    <entry file="file://$PROJECT_DIR$/templates/bookticket.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="170">
+          <caret line="52" column="87" lean-forward="true" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bussystem/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bussystem/admin.py">
+    <entry file="file://$PROJECT_DIR$/templates/btedit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bussystem/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="1870">
+          <caret line="110" column="49" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/useredit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+        <state relative-caret-position="1122">
+          <caret line="66" column="85" selection-start-line="66" selection-start-column="85" selection-end-line="66" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registrationforuser.html">
+    <entry file="file://$PROJECT_DIR$/static/css/animate.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="102" column="10" lean-forward="true" selection-start-line="51" selection-start-column="2" selection-end-line="102" selection-end-column="10" />
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/companyregister.html">
+    <entry file="file://$PROJECT_DIR$/templates/Addthingsheader.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="101" column="18" lean-forward="true" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+        <state relative-caret-position="1292">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/createbt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/adminheader.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="96" column="6" lean-forward="true" selection-start-line="45" selection-end-line="96" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BtTicket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="76" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/userticket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="114" column="106" selection-start-line="114" selection-start-column="106" selection-end-line="114" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/bus (3).jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/bus.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/asd.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/544750.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/background.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/img4.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/in.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/inner.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/sidebar-5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/signup.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/images.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/busss.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/adminprofile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5049">
+          <caret line="297" selection-start-line="297" selection-end-line="297" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/btbooking.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="101" selection-start-line="10" selection-start-column="101" selection-end-line="10" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/AddThings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="264" column="113" selection-start-line="264" selection-start-column="113" selection-end-line="264" selection-end-column="113" />
+        <state relative-caret-position="1666">
+          <caret line="98" column="83" selection-start-line="98" selection-start-column="83" selection-end-line="98" selection-end-column="83" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/bus1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/adminprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="157" column="115" lean-forward="true" selection-start-line="157" selection-end-line="158" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/companyregister.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineSystem/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/adminsearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="248" lean-forward="true" selection-start-line="248" selection-end-line="248" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bussystem/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/deletebt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="76" column="71" lean-forward="true" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/mail/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bussystem/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-619">
-          <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+        <state relative-caret-position="160">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/userticket.html">
+    <entry file="file://$PROJECT_DIR$/OnlineSystem/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="231" column="89" selection-start-line="231" selection-start-column="89" selection-end-line="231" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BtCancel.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/bookticket.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="357" column="94" selection-start-line="357" selection-start-column="94" selection-end-line="357" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineSystem/middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="259">
+          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bussystem/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+        <state relative-caret-position="156">
+          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1572286119638" expanded="true" signature="548:596" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

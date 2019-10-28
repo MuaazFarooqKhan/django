@@ -14,6 +14,11 @@ SECRET_KEY = '=nwt8-o=bd)y()a8yggzgrl5k6y8in*jzxa7m4%tuwp36k=(m*'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'talhayonus@gmail.com'
+EMAIL_HOST_PASSWORD = 'Messi+Suarez==109'
+EMAIL_USE_TLS = True
 
 
 # Application definition

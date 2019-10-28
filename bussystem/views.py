@@ -1,7 +1,9 @@
 from __future__ import unicode_literals
+from django.conf import settings
 
 from pprint import pprint
-
+from django.core.mail import send_mail
+import random
 from django.contrib import messages
 from django.shortcuts import render, redirect, HttpResponse
 from django.db import IntegrityError
@@ -22,6 +24,21 @@ def create(request):
     email = request.GET['email']
     password = request.GET['password']
     confirmpassword = request.GET['confirmpassword']
+
+    customer_name = firstname
+    customer_email = email
+    validation_code = random.randint(111111, 999999)
+    validation_code = str(validation_code)
+    # check_verification_code(num)
+    mystr = "Hello Mr. " + customer_name + " Your six digit verification code is " + validation_code
+    send_mail(
+        'Email Verification ',
+        mystr,
+        settings.EMAIL_HOST_USER,
+        [customer_email],
+        fail_silently=False,
+    )
+    # request.session['validation_code'] = validation_code
 
     book_details = Customer(firstname=firstname, lastname=lastname, email=email, password=password,
                             confirmpassword=confirmpassword)
@@ -76,7 +93,7 @@ def authentication(request):
 def signout(request):
     try:
         del request.session['email']
-        del request.session['password']
+        # del request.session['password']
         print('logout')
         return redirect('/signout')
     except:
@@ -122,7 +139,8 @@ def companyregister(request):
 
     else:
         messages.success(request, 'Passwords didnt match')
-        return redirect('/callcompanyregister')
+        return render(request, 'companyregister.html')
+
 
 def callcompanyregister(request):
     # print(request.POST)
@@ -130,9 +148,25 @@ def callcompanyregister(request):
 
 
 def btticket(request):
-    return render(request, 'BtTicket.html')
+
+    if request.session.get('email'):
+
+        email = request.session['email']
+        btID = Bt.objects.get(email=email)
+
+        x=Company.objects.get(id=btID.companyidd.id)
+        stations = Station.objects.filter(companyid=x)
+
+        context = {
+            'stations': stations,
+
+        }
 
 
+        return render(request, 'BtTicket.html', context)
+
+    else:
+        return HttpResponse("Bt is not logged in")
 def btcancel(request):
     return render(request, 'btcancel.html')
 
@@ -143,7 +177,7 @@ def usercancel(request):
 
 def userticket(request):
     stations = Station.objects.all()
-    x=43;
+    x = 43;
     context = {
         'stations': stations,
         'x':x
@@ -185,7 +219,6 @@ def createbt(request):
     if not (Bt.objects.filter(email=eemail).count()>0 and eemail != ''):
         bt_details = Bt(companyidd= newbusno, username=username, email=eemail, fnames=fnames, lnames=lnames, address=address,
                         city=city, passwords=passwords)
-
         bt_details.save()
 
     return render(request, 'createbt.html')
@@ -194,11 +227,19 @@ def createbt(request):
 
 
 def deletebt(request):
-    bts = Bt.objects.all()
-    context = {
-        'bts': bts
-    }
-    return render(request, 'deletebt.html', context)
+
+    if request.session.get('email'):
+
+        email = request.session['email']
+        x = Company.objects.get(companyemail=email)
+        bts = Bt.objects.filter(companyidd=x)
+
+
+
+        context = {
+            'bts': bts
+        }
+        return render(request, 'deletebt.html', context)
 
 def delete(request, id):
     bt = Bt.objects.get(pk=id)
@@ -218,11 +259,15 @@ def adminprofile(request):
             com_userlastname=newbusno.adminlastname
             com_name=newbusno.companyname
             companyemail=newbusno.companyemail
+            companypassword=newbusno.companypassword
+            cusid=newbusno.id
             context = {
                 'com_name':com_name,
                 'com_username':com_username,
                 'com_userlastname':com_userlastname,
                 'companyemail':companyemail,
+                'companypassword':companypassword,
+                'cusid':cusid,
             }
         return render(request, 'adminprofile.html', context)
 
@@ -244,9 +289,11 @@ def update(request):
     return render(request, 'update.html')
 
 
-def edit(request):
+def edit(request, id):
     # books = Company.objects.get(pk=id)
     # books.title = request.GET['title']
+
+
     return redirect('/')
 
 def root_selectionn(request):
@@ -269,7 +316,7 @@ def root_selectionn(request):
         'stations':stations,
     }
 
-    return render(request, 'userticket.html',context)
+    return render(request, 'userticket.html', context)
 
 
 def addthings(request):
@@ -344,7 +391,17 @@ def routes(request):
 
 
 def adminsearch(request):
-    return render(request, 'adminsearch.html')
+    email = request.session['email']
+    if request.session.get('email'):
+        # com_id = Company.objects.get(companyemail=email).id
+        # mstation = Station.objects.filter(companyid=com_id)
+        # rou = routee.objects.filter()
+        com_id = Company.objects.get(companyemail=email).id
+        mstation = Station.objects.filter(companyid=com_id)
+        context = {
+            'mystations': mstation,
+        }
+    return render(request, 'adminsearch.html', context)
 
 
 def bookticket(request, id):
@@ -368,13 +425,14 @@ def ticket_done(request, id):
     phone = request.GET.get('phone')
     cnic = request.GET.get('cnic')
     email= request.GET.get('email')
-    amount = request.GET.get('amount')
+    # amount = request.GET.get('amount')
     seatsno = request.GET.get('seatsno')
     noofseats = request.GET.getlist('checks[]')
-
+    # total_amount = noofseats.count()
+    total_amount=0
     for i in noofseats:
         temp_str=temp_str+str(i)+","
-
+        total_amount=total_amount+1
     temp_str = temp_str[:-1]
 
     noofseats=str(temp_str)
@@ -382,6 +440,8 @@ def ticket_done(request, id):
     print(username)
     print('Temppppp')
     rou=routee.objects.get(pk=id)
+    total_amount=total_amount*rou.price
+
     all_seats=rou.booked_seats+','+temp_str
     rou.booked_seats=all_seats
     arr = all_seats.split(',')
@@ -389,7 +449,7 @@ def ticket_done(request, id):
     rou.save()
 
 
-    booking_details= bootticket(route_forign=rou,username=username, phone=phone, cnic=cnic, email= email ,amount=amount, noofseats=noofseats, seatno=seatsno)
+    booking_details= bootticket(route_forign=rou,username=username, phone=phone, cnic=cnic, email= email ,amount=total_amount, noofseats=noofseats, seatno=seatsno)
     booking_details.save()
     return redirect( '/userticket')
     # return redirect('/')
@@ -410,10 +470,66 @@ def user_update(request):
     if request.session.get('email'):
         cus = Customer.objects.get(email=email)
         # cus = Company.objects.get(cus_id=com_id)
-
         cus.firstname = request.GET['title']
         cus.lastname = request.GET['price']
         cus.password = request.GET['author']
         cus.confirmpassword = request.GET['cpass']
         cus.save()
         return redirect('/userticket')
+
+
+def btedit(request):
+    email = request.session['email']
+    if request.session.get('email'):
+        bt = Bt.objects.get(email=email)
+        context = {
+            'bt': bt
+        }
+        return render(request, 'btedit.html', context)
+
+
+def bt_update(request):
+
+    email = request.session['email']
+    if request.session.get('email'):
+        cus = Bt.objects.get(email=email)
+        # cus = Company.objects.get(cus_id=com_id)
+
+        cus.username = request.GET['title']
+        cus.fnames = request.GET['price']
+        cus.lnames = request.GET['author']
+        cus.passwords = request.GET['cpass']
+        cus.save()
+        return redirect('/btticket')
+
+
+def edit(request):
+    return redirect('/deletebt')
+
+
+def rootselectionn(request):
+    # stations = Station.objects.filter(companyid=Company.objects.get(id=2))
+
+    stations = Station.objects.all()
+    s1 = request.GET['TeamComp1']
+    s2 = request.GET['TeamComp2']
+
+    all_routes = routee.objects.filter(to_route=Station.objects.get(id=s1),from_route=Station.objects.get(id=s2))
+
+    if(all_routes.count()==0):
+        print('No route found')
+    else:
+        for i in all_routes:
+            print(i.bus_no)
+
+    context = {
+        'all_routes': all_routes,
+        'stations':stations,
+    }
+
+    return render(request, 'adminsearch.html', context)
+
+def admindelete(request, id):
+    bt = routee.objects.get(pk=id)
+    bt.delete()
+    return render(request, 'adminsearch.html')
