@@ -1,45 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/bussystem/views.py" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="45af2771-0070-41bc-b40d-76b3a38f552d" name="Default Changelist" comment="done">
-      <change afterPath="$PROJECT_DIR$/static/images/busss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/images.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/z (3).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/z (4).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/z (5).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/z (8).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/btedit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineSystem/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineSystem/middleware.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnlineSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineSystem/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bussystem/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/bussystem/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bussystem/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bussystem/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bussystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bussystem/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bussystem/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bussystem/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/adminprofile.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/adminprofile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/btbooking.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/btbooking.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/createbt.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/createbt.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/bus2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/bus2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/in.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/in.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/AddThings.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddThings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Addthingsheader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Addthingsheader.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/BtTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BtTicket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adminheader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adminheader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adminprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adminprofile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adminsearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adminsearch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/bookticket.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bookticket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/companyregister.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/companyregister.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/createbt.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/createbt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/deletebt.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/deletebt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/editbt.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registrationforuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registrationforuser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/useredit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/useredit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/userticket.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/userticket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,75 +51,81 @@
     <session id="1166699811">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="40" />
+          <entry key="project.closed" value="53" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.100" value="1" />
-          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.18" value="2" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.196" value="1" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.230" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.43" value="3" />
           <entry key="project.open.time.44" value="4" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.47" value="4" />
           <entry key="project.open.time.48" value="1" />
-          <entry key="project.open.time.49" value="1" />
-          <entry key="project.open.time.50" value="1" />
-          <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.52" value="2" />
+          <entry key="project.open.time.49" value="2" />
+          <entry key="project.open.time.50" value="2" />
+          <entry key="project.open.time.51" value="2" />
+          <entry key="project.open.time.52" value="3" />
           <entry key="project.open.time.53" value="2" />
-          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.54" value="2" />
           <entry key="project.open.time.55" value="1" />
-          <entry key="project.open.time.57" value="2" />
-          <entry key="project.open.time.59" value="2" />
+          <entry key="project.open.time.57" value="3" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.59" value="3" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.63" value="2" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.67" value="2" />
+          <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="46" />
+          <entry key="project.opened" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2257" />
-          <entry key="html" value="9845" />
-          <entry key="py" value="7646" />
+          <entry key="css" value="2566" />
+          <entry key="html" value="11724" />
+          <entry key="py" value="9600" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2257" />
-          <entry key="HTML" value="9845" />
+          <entry key="CSS" value="2566" />
+          <entry key="HTML" value="11724" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="7646" />
+          <entry key="Python" value="9600" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="JPG" value="2" />
-          <entry key="css" value="194" />
-          <entry key="html" value="344" />
-          <entry key="jpg" value="16" />
+          <entry key="JPG" value="3" />
+          <entry key="css" value="198" />
+          <entry key="html" value="386" />
+          <entry key="jpg" value="34" />
           <entry key="js" value="5" />
           <entry key="map" value="7" />
-          <entry key="png" value="3" />
-          <entry key="py" value="220" />
+          <entry key="png" value="7" />
+          <entry key="py" value="268" />
           <entry key="rnc" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="194" />
-          <entry key="HTML" value="344" />
-          <entry key="Image" value="21" />
+          <entry key="CSS" value="198" />
+          <entry key="HTML" value="386" />
+          <entry key="Image" value="44" />
           <entry key="JavaScript" value="5" />
-          <entry key="Python" value="220" />
+          <entry key="Python" value="268" />
           <entry key="RNG Compact" value="1" />
           <entry key="SourceMap" value="7" />
         </counts>
@@ -151,42 +140,52 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bussystem/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            <state relative-caret-position="72">
+              <caret line="43" column="101" lean-forward="true" selection-start-line="43" selection-end-line="44" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1572286119638" expanded="true" signature="548:596" ph="..." />
+                <marker date="1574752154401" expanded="true" signature="12922:12924" ph="..." />
+                <marker date="1574752154401" expanded="true" signature="12922:12925" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bussystem/models.py">
+        <entry file="file://$PROJECT_DIR$/templates/buyticketuser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="1309">
+              <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/BtTicket.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4114">
+              <caret line="242" column="58" selection-start-line="242" selection-start-column="58" selection-end-line="242" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/bookticket.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="84" column="41" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="41" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OnlineSystem/settings.py">
+        <entry file="file://$PROJECT_DIR$/templates/userticket.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/mail/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+            <state relative-caret-position="3519">
+              <caret line="207" column="51" selection-start-line="207" selection-start-column="51" selection-end-line="207" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -203,36 +202,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ed</find>
-      <find>ad</find>
-      <find>id</find>
-      <find>btti</find>
-      <find>createbt</find>
-      <find>booktic</find>
-      <find>ticket_d</find>
-      <find>th</find>
-      <find>row</find>
-      <find>bu</find>
-      <find>createb</find>
-      <find>creat</find>
-      <find>auth</find>
-      <find>create</find>
-      <find>btt</find>
-      <find>admins</find>
-      <find>co</find>
+      <find>btticket</find>
+      <find>root_selectionn</find>
+      <find>bookt</find>
       <find>root</find>
-      <find>Roo</find>
-      <find>Root</find>
-      <find>navi</find>
-      <find>nav</find>
-      <find>test</find>
-      <find>login</find>
-      <find>bttt</find>
-      <find>signo</find>
-      <find>adm</find>
-      <find>deletebt</find>
-      <find>delete</find>
-      <find>edit</find>
+      <find>buyticketuser</find>
+      <find>bookticket</find>
+      <find>buyti</find>
+      <find>buyt</find>
+      <find>ticket</find>
+      <find>book</find>
+      <find>ary</find>
+      <find>ticke</find>
+      <find>buyticketbt</find>
+      <find>create</find>
+      <find>aut</find>
+      <find>ticket_b</find>
+      <find>authe</find>
+      <find>char</find>
+      <find>total_amount</find>
+      <find>del</find>
+      <find>ticket_buy</find>
+      <find>input[type=checkbox]:checked + label</find>
+      <find>hi</find>
+      <find>booktic</find>
+      <find>for</find>
+      <find>h</find>
+      <find>inpu</find>
+      <find>&quot;h&quot;</find>
+      <find>ticket_done</find>
+      <find>var</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -241,11 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/css/dashboard.css" />
-        <option value="$PROJECT_DIR$/templates/userpage.html" />
-        <option value="$PROJECT_DIR$/templates/headerBt.html" />
-        <option value="$PROJECT_DIR$/templates/performance.html" />
-        <option value="$PROJECT_DIR$/templates/header.html" />
         <option value="$PROJECT_DIR$/templates/routes.html" />
         <option value="$PROJECT_DIR$/templates/station.html" />
         <option value="$PROJECT_DIR$/static/js/bootstrap.min.js" />
@@ -256,11 +250,9 @@
         <option value="$PROJECT_DIR$/templates/BtCancel.html" />
         <option value="$PROJECT_DIR$/static/css/gijgo.min.css" />
         <option value="$PROJECT_DIR$/static/css/gijgoadmin.min.css" />
-        <option value="$PROJECT_DIR$/bussystem/admin.py" />
         <option value="$PROJECT_DIR$/templates/checkboxtest.html" />
         <option value="$PROJECT_DIR$/templates/editbt.html" />
         <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/OnlineSystem/middleware.py" />
         <option value="$PROJECT_DIR$/static/css/pe-icon-7-stroke.css" />
         <option value="$PROJECT_DIR$/static/css/signup.css" />
         <option value="$PROJECT_DIR$/templates/login.html" />
@@ -271,26 +263,33 @@
         <option value="$PROJECT_DIR$/static/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/static/css/createbt.css" />
         <option value="$PROJECT_DIR$/templates/adminheader.html" />
-        <option value="$PROJECT_DIR$/templates/registrationforuser.html" />
         <option value="$PROJECT_DIR$/templates/adminprofile.html" />
-        <option value="$PROJECT_DIR$/templates/bookticket.html" />
         <option value="$PROJECT_DIR$/templates/btedit.html" />
         <option value="$PROJECT_DIR$/templates/Addthingsheader.html" />
         <option value="$PROJECT_DIR$/templates/useredit.html" />
         <option value="$PROJECT_DIR$/templates/createbt.html" />
-        <option value="$PROJECT_DIR$/bussystem/models.py" />
-        <option value="$PROJECT_DIR$/templates/BtTicket.html" />
-        <option value="$PROJECT_DIR$/templates/userticket.html" />
-        <option value="$PROJECT_DIR$/static/css/home.css" />
         <option value="$PROJECT_DIR$/static/css/adminprofile.css" />
-        <option value="$PROJECT_DIR$/templates/AddThings.html" />
         <option value="$PROJECT_DIR$/templates/adminsearch.html" />
-        <option value="$PROJECT_DIR$/static/css/btbooking.css" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/templates/companyregister.html" />
-        <option value="$PROJECT_DIR$/bussystem/urls.py" />
         <option value="$PROJECT_DIR$/templates/deletebt.html" />
+        <option value="$PROJECT_DIR$/templates/emailvalidationforuser.html" />
+        <option value="$PROJECT_DIR$/templates/AddThings.html" />
+        <option value="$PROJECT_DIR$/templates/emailvalidationforcomapany.html" />
+        <option value="$PROJECT_DIR$/templates/companyregister.html" />
+        <option value="$PROJECT_DIR$/templates/userticket.html" />
+        <option value="$PROJECT_DIR$/templates/registrationforuser.html" />
+        <option value="$PROJECT_DIR$/bussystem/admin.py" />
+        <option value="$PROJECT_DIR$/bussystem/models.py" />
+        <option value="$PROJECT_DIR$/templates/buyticketuser.html" />
         <option value="$PROJECT_DIR$/OnlineSystem/settings.py" />
+        <option value="$PROJECT_DIR$/bussystem/urls.py" />
+        <option value="$PROJECT_DIR$/templates/charge.html" />
+        <option value="$PROJECT_DIR$/templates/stripeforuser.html" />
+        <option value="$PROJECT_DIR$/static/css/home.css" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
+        <option value="$PROJECT_DIR$/static/css/btbooking.css" />
+        <option value="$PROJECT_DIR$/templates/bookticket.html" />
+        <option value="$PROJECT_DIR$/templates/BtTicket.html" />
+        <option value="$PROJECT_DIR$/OnlineSystem/middleware.py" />
         <option value="$PROJECT_DIR$/bussystem/views.py" />
       </list>
     </option>
@@ -302,10 +301,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="683" />
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -336,6 +334,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -362,7 +361,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -446,12 +444,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.2065053" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.2246596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.20347957" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49319214" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48260212" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,8 +457,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51664144" side_tool="true" weight="0.3967213" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48335856" visible="true" weight="0.19180328" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5173979" side_tool="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48108926" weight="0.2590164" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -469,30 +467,6 @@
       <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.2065053" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
-      <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.20347957" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49319214" visible="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.3295082" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51664144" side_tool="true" weight="0.3967213" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48335856" weight="0.19180328" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3295082" />
-      <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -534,6 +508,38 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bussystem/views.py</url>
+          <line>799</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bussystem/views.py</url>
+          <line>803</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bussystem/views.py</url>
+          <line>805</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bussystem/views.py</url>
+          <line>812</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bussystem/views.py</url>
+          <line>815</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bussystem/views.py</url>
+          <line>816</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -545,156 +551,40 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret column="340723" selection-start-column="340715" selection-end-column="340723" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css.map">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/createbt.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/routes.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registrationforuser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="115" column="132" selection-start-line="115" selection-start-column="132" selection-end-line="115" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/editbt.html" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/phrase.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="118" column="20" lean-forward="true" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="38391" selection-start-line="5" selection-start-column="38391" selection-end-line="5" selection-end-column="38395" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/bookticket.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="52" column="87" lean-forward="true" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/btedit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="110" column="49" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/useredit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="85" selection-start-line="66" selection-start-column="85" selection-end-line="66" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/animate.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Addthingsheader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/createbt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/adminheader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="96" column="6" lean-forward="true" selection-start-line="45" selection-end-line="96" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BtTicket.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="115" column="76" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/userticket.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="114" column="106" selection-start-line="114" selection-start-column="106" selection-end-line="114" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/bus (3).jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/bus.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/asd.jpg">
+    <entry file="file://$PROJECT_DIR$/static/images/123.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/images/544750.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/5.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/2.jpg">
+    <entry file="file://$PROJECT_DIR$/static/images/about.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/images/background.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/asd.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/bus (3).jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/bus1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/bus2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/bus3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/busss.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/face-3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/img1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/images/img4.JPG">
@@ -703,10 +593,13 @@
     <entry file="file://$PROJECT_DIR$/static/images/in.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/inner.jpg">
+    <entry file="file://$PROJECT_DIR$/static/images/inn.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/images/sidebar-5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/inner.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/images/signup.png">
@@ -715,133 +608,230 @@
     <entry file="file://$PROJECT_DIR$/static/images/images.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/busss.jpg">
+    <entry file="file://$PROJECT_DIR$/static/images/z (3).jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/adminprofile.css">
+    <entry file="file://$PROJECT_DIR$/templates/btedit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5049">
-          <caret line="297" selection-start-line="297" selection-end-line="297" />
+        <state relative-caret-position="2312">
+          <caret line="136" column="11" selection-start-line="117" selection-start-column="4" selection-end-line="136" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/btbooking.css">
+    <entry file="file://$PROJECT_DIR$/OnlineSystem/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="101" selection-start-line="10" selection-start-column="101" selection-end-line="10" selection-end-column="101" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/createbt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/AddThings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="98" column="83" selection-start-line="98" selection-start-column="83" selection-end-line="98" selection-end-column="83" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="8">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="52" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/bus1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/adminprofile.html">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templates/admin/change_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="272">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/home.css">
+    <entry file="file://$PROJECT_DIR$/templates/emailvalidationforcomapany.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="309">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/templates/emailvalidationforuser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="157" column="115" lean-forward="true" selection-start-line="157" selection-end-line="158" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="309">
+          <caret line="53" selection-end-line="62" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registrationforuser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="132" column="15" selection-start-line="132" selection-start-column="15" selection-end-line="132" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/companyregister.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="207">
+          <caret line="143" column="20" lean-forward="true" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineSystem/middleware.py">
+    <entry file="file://$PROJECT_DIR$/bussystem/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/adminsearch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="248" lean-forward="true" selection-start-line="248" selection-end-line="248" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bussystem/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/deletebt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="76" column="71" lean-forward="true" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/mail/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bussystem/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OnlineSystem/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bussystem/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/middleware/clickjacking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/messages/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/middleware/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="326" selection-start-line="326" selection-end-line="326" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/views/generic/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/template/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/sessions/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/middleware/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/charge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/stripeforuser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="429" column="77" selection-start-line="429" selection-start-column="77" selection-end-line="429" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/btbooking.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7072">
+          <caret line="416" selection-start-line="416" selection-end-line="416" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bussystem/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/buyticketuser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BtTicket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4114">
+          <caret line="242" column="58" selection-start-line="242" selection-start-column="58" selection-end-line="242" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bookticket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="41" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/userticket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3519">
+          <caret line="207" column="51" selection-start-line="207" selection-start-column="51" selection-end-line="207" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineSystem/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bussystem/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="72">
+          <caret line="43" column="101" lean-forward="true" selection-start-line="43" selection-end-line="44" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1572286119638" expanded="true" signature="548:596" ph="..." />
+            <marker date="1574752154401" expanded="true" signature="12922:12924" ph="..." />
+            <marker date="1574752154401" expanded="true" signature="12922:12925" ph="..." />
           </folding>
         </state>
       </provider>

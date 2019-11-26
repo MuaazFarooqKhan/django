@@ -102,3 +102,31 @@ background: #000B18;}
     border-radius: 25px ;
 }
 
+#services{
+    background-image: url("");
+}
+.info{
+
+    display: grid;
+    grid-gap: 5px;
+    padding: 3rem;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem;
+
+}
+
+
+
+#contact{
+
+  margin-left: 50px;
+
+
+}
+
+
+
+
+
+
+

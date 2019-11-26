@@ -14,6 +14,10 @@ SECRET_KEY = '=nwt8-o=bd)y()a8yggzgrl5k6y8in*jzxa7m4%tuwp36k=(m*'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+STRIPE_SECRET_KEY = 'sk_test_l7N5NuH2rHu9PcoJwSlpZzni0053WHYxL7'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_kl1GgEmYD0erOEjUv85PYbLt00BmyMyxqq'
+
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'talhayonus@gmail.com'

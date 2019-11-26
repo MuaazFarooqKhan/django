@@ -24,11 +24,13 @@ urlpatterns = [
     path('routes/', views.routes, name='routes'),
     path('station/', views.station, name='station'),
     path('root_selectionn/', views.root_selectionn, name='root_selectionn'),
+    path('root_selectionn_for_BT/', views.root_selectionn_for_BT, name='root_selectionn_for_BT'),
     path('rootselectionn/', views.rootselectionn, name='rootselectionn'),
     path('adminsearch/', views.adminsearch, name='adminsearch'),
     path('signout/', views.signout, name='signout'),
     path('update/', views.update, name='update'),
     path('ticket_done/<id>/', views.ticket_done, name='ticket_done'),
+    path('ticket_buy_done/<id>/', views.ticket_buy_done, name='ticket_buy_done'),
     path('bookticket/<id>/', views.bookticket, name='bookticket'),
     path('edit/<id>/', views.edit, name='edit'),
     path('editbt/<id>/', views.edit, name='edit'),
@@ -37,5 +39,12 @@ urlpatterns = [
     path('btedit/', views.btedit, name='btedit'),
     path('bt_update/', views.bt_update, name='btupdate'),
     path('admindelete/<id>/', views.admindelete, name='admindelete'),
+    path('validation_code_check', views.validation_code_check, name='validation_code_check'),
+    path('validation_code', views.validation_code, name='validation_code'),
+    path('buyticketuser/<id>/', views.buyticketuser, name='buyticketuser'),
+    path('buyticketbt/<id>/', views.buyticketbt, name='buyticketbt'),
+
+    path('charge/', views.charge, name='charge'),  # new
+    path('stripehome/', views.HomePageView.as_view(), name='home'),
 
 ]

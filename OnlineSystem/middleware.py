@@ -11,7 +11,7 @@ class TimezoneMiddleware(object):
         return None
 
     def process_request(self, request):
-        print('Middleware executed succesfully\t', request.get_full_path())
+        # print('Middleware executed succesfully\t', request.get_full_path())
 
         if request.get_full_path() == '127.0.0.1:8000/calladdthings/':
             if not request.session.get('email'):

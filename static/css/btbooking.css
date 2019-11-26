@@ -397,15 +397,24 @@ input[type=checkbox] + label {
   color: #ccc;
   font-style: italic;
 }
-input[type=checkbox]:checked + label {
+input[type=checkbox]:disabled + label{
     color: #f00;
     font-style: normal;
 }
+input[type=checkbox]:checked + label{
+    color: green;
+    font-style: normal;
 
+}
+/*input[type=checkbox][disabled]:checked + label{*/
+    /*color: yellow;*/
+    /*font-style: normal;*/
+
+/*}*/
+#h1{
+    color: #1D62F0;
+}
 .btn-p {
-
-
-
     color: #FFD662FF;
     background-color: #000B18;
     border-color: #000B18;

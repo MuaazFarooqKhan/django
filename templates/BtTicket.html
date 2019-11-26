@@ -164,7 +164,7 @@
 {#                                                            <a class="btn btn-primary" href="/root_selection/" style="margin-top: -6%; margin-right: 4%; margin-left: 0%; float: right">Search</a>#}
 {##}
 {#                                                        </div>#}
-                                                        <form class="col-md-12 " action= "/root_selectionn" >
+                                                        <form class="col-md-12 " action= "/root_selectionn_for_BT" >
 {#            {%  csrf_token %}#}
   <div class="row">
     <div class="form-group offset-md-1 col-md-4" >
@@ -222,6 +222,7 @@
                                                                         <th style="background-color:#000B18;color: white" > Bus no</th>
                                                                         <th style="background-color:#000B18;color: white" >Price</th>
                                                                         <th  style="background-color:#000B18;color: white" >Time And Date</th>
+                                                                        <th  style="background-color:#000B18;color: white" ></th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -235,7 +236,7 @@
                                                                         <td>{{ r.Time }}</td>
                                                                     <td>
                                                                         <a class="btn btn-info" href="/bookticket/{{ r.id }}">Book</a>
-                                                                        <a class="btn btn-danger" href="/delete/{{ r.id }}">Buy</a>
+                                                                        <a class="btn btn-danger" href="/buyticketuser/{{ r.id }}">Buy</a>
                                                                     </td>
                                                                     </tr>
 

@@ -119,13 +119,13 @@
                 	<h1 style="color: #FFD662FF">SignUp</h1>
                 <h4 style="text-align: center"> (Company Registration) </h4>
             <label class="form-group" for="adminfirstname">Admin First Name: </label>
-            <input class="form-control" type="text" name="adminfirstname" required pattern="[A-Z,a-z]+"><br>
+            <input class="form-control" type="text" name="adminfirstname" required pattern="[A-Z,a-z]+" title="alphabet only"><br>
 
             <label class="form-group" for="adminlastname">Admin Last Name: </label>
             <input class="form-control" type="text" name="adminlastname" required pattern="[A-Z,a-z]+"><br>
 
             <label class="form-group" for="companyname">Company Name: </label>
-            <input class="form-control" type="text" name="companyname" required pattern="[A-Z,a-z]+"><br>
+            <input class="form-control" type="text" name="name" required pattern="[A-Z,a-z]+" oninvalid="Validate()"><br>
 
             <label class="form-group" for="companyemail">Email: </label>
             <input class="form-control" type="email" id="mail" name="mail"><br>
@@ -230,6 +230,20 @@
 {#			</div>#}
 {#		</div>#}
 </body>
+<script>
+    function Validate()
+{
+    var val = document.getElementById('name').value;
+
+    if (!val.match(/^[a-zA-Z]+$/))
+    {
+        alert('Only alphabets are allowed');
+        return false;
+    }
+
+    return true;
+}
+</script>
     <script>
         var email = document.getElementById("mail");
 

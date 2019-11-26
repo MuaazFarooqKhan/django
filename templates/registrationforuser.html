@@ -123,7 +123,14 @@
 
             <label class="form-group" for="confirmpassword">Confirm Password: </label>
             <input class="form-control" type="password" name="confirmpassword" required pattern="[A-Z,a-z,0-9]+"><br>
-
+{% if messages %}
+        {% for message in messages %}
+{#                        {% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}#}
+            <div class="alert alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}" role="alert">
+            {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
             <input class="btn " type="submit" value="Create">
 
 

@@ -34,8 +34,14 @@
 <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
 
 </head>
-
-<body onload="heckList({{ ary }})">
+{#<style>#}
+{##}
+{#    .h1 .input[type=checkbox][disabled]:checked + label{#}
+{#    color: yellow;#}
+{#    font-style: normal;#}
+{#    }#}
+{#</style>#}
+<body onload="heckList({{ ary }}, {{ bry }})">
     <marquee style="float: left" align="{mid}" direction="left" scrollamount="10" behavior="altenate" scrolldelay="50" loop="" bgcolor="white" width="50%" height="50px" onmouseover="this.stop()" onmouseout="this.start()" class="firstmarquee">
         <p class="navtext">
             You are the admin of the company. You have the authority of each of every thing like add new bt, new station or can add new busses.
@@ -86,15 +92,15 @@
                 <li class="row row--1">
                     <ol class="seats" type="A">
                         <li class="seat" style="margin-left: 25%">
-                            <input type="checkbox" id="1A" checked disabled />
+                            <input type="checkbox" id="1A" checked disabled {{ checkedone }}/>
                             <label for="1A">1A</label>
                         </li>
                         <li class="seat">
-                            <input type="checkbox" id="1B"  name="checks[]" value="1B"/>
+                            <input type="checkbox" id="1B"  name="checks[]" value="1B" />
                             <label for="1B">1B</label>
                         </li>
                         <li class="seat" style="margin-left: 30%">
-                            <input type="checkbox" id="1C" checked disabled />
+                            <input type="checkbox" id="1C" checked disabled {{ checkedtwo }} />
                             <label for="1C">1C</label>
                         </li>
                         <li class="seat">
@@ -107,7 +113,7 @@
                     <ol class="seats" type="A">
                         <li class="seat" style="margin-left: 25%">
                             <input type="checkbox" id="2A"   name="checks[]" value="2A" />
-                            <label for="2A">2A</label>
+                            <label for="2A" id = "h">2A</label>
                         </li>
                         <li class="seat">
                             <input type="checkbox" id="2B"  name="checks[]" value="2B" />
@@ -291,8 +297,8 @@
                 <li class="row row--11" style="margin-left: 8%">
                     <ol class="seats" type="A">
                         <li class="seat">
-                            <input type="checkbox" id="11A" name="checks[]" value="11A" />
-                            <label for="11A">11A</label>
+                            <input class="" type="checkbox" id="11A" name="checks[]" value="11A" />
+                            <label for="11A" id="11A1">11A</label>
                         </li>
                         <li class="seat">
                             <input type="checkbox" id="11B" name="checks[]" value="11B" />
@@ -300,7 +306,7 @@
                         </li>
                         <li class="seat">
                             <input type="checkbox" id="11C" name="checks[]" value="11C" />
-                            <label for="11C">11C</label>
+                            <label for="11C" id = "h1">11C</label>
                         </li>
                         <li class="seat">
                             <input type="checkbox" id="11D" name="checks[]" value="11D" />
@@ -388,15 +394,39 @@
 {#    checkList()#}
 {##}
 {#</script>#}
-    <script>
-    function heckList(ary) {
-        console.log(ary)
-        ary.map(function(item) {
-            document.getElementById(item).disabled = true;
+<script>
+    function heckList(ary, bry) {
+        {#console.log(ary)#}
+          ary.map(function(item) {
             document.getElementById(item).checked = true;
+                        document.getElementById(item).disabled = true;
+            console.log(document.getElementById(item))
+            {#document.getElementById('h').style.color = '#000'#}
+            console.log(item)
 
         })
-    }
 
+                {#console.log(bry)#}
+
+        bry.map(function(item) {
+
+            document.getElementById(item).disabled = true;
+            document.getElementById(item).checked = true;
+            {#document.getElementById('h1').style.color = '#000'#}
+            console.log(item.valueOf())
+
+
+        })
+
+
+    }
+</script>
+<script>
+    $( ":checkbox" )
+  .map(function() {
+    return this.id;
+  })
+  .get()
+  .join();
 </script>
 </html>

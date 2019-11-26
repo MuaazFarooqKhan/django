@@ -83,6 +83,7 @@ class routee(models.Model):
     Time = models.CharField(max_length=150, null=True)
     price = models.FloatField(max_length=8, null=True)
     booked_seats = models.CharField(max_length=3000, null=True)
+    buy_seats = models.CharField(max_length=3000, null=True)
     remaining_seats = models.IntegerField(null=True)
 
 
@@ -109,6 +110,18 @@ class bootticket(models.Model):
     seatno = models.IntegerField(null=True)
     noofseats = models.CharField(max_length=1500, null=True)
     # seat = models.CharField(null=True)
+
+    def __str__(self):
+        return self.username
+
+class buyticket(models.Model):
+    route_forign = models.ForeignKey(routee, on_delete=models.CASCADE, related_name='route_for_buy_ticket', null=False, blank=False)
+    username = models.CharField(max_length=150, null=True)
+    phone = models.IntegerField(null=True)
+    cnic = models.IntegerField(null=True)
+    email = models.EmailField(null=True)
+    amount = models.FloatField(null=True)
+    noofseats = models.CharField(max_length=1500, null=True)
 
     def __str__(self):
         return self.username
